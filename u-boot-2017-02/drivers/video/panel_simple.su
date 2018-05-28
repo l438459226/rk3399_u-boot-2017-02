@@ -1,0 +1,6 @@
+panel_simple.c:80:12:panel_simple_disable	32	static
+panel_simple.c:67:12:panel_simple_enable	32	static
+panel_simple.c:56:12:panel_simple_unprepare	32	static
+panel_simple.c:45:12:panel_simple_prepare	32	static
+panel_simple.c:150:13:panel_simple_deinit	0	static
+panel_simple.c:119:12:panel_simple_init	64	static

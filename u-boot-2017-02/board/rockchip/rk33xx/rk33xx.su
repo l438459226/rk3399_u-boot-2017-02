@@ -1,0 +1,8 @@
+rk33xx.c:22:13:rkclk_set_apll_high	0	static
+rk33xx.c:35:6:board_lmb_reserve	32	static
+rk33xx.c:49:5:board_storage_init	32	static
+rk33xx.c:65:5:board_init	0	static
+rk33xx.c:80:5:checkboard	16	static
+rk33xx.c:92:5:arch_early_init_r	16	static
+rk33xx.c:172:5:board_late_init	80	static
+rk33xx.c:239:6:ft_board_setup	32	static

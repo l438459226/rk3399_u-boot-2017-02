@@ -1,0 +1,3 @@
+pwm_remotectl.c:404:5:remotectl_do_something_readtime	0	static
+pwm_remotectl.c:428:5:remotectl_do_something	16	static
+pwm_remotectl.c:548:6:remotectlInitInDriver	32	static

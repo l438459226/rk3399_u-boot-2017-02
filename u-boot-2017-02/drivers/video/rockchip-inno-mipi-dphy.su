@@ -1,0 +1,5 @@
+rockchip-inno-mipi-dphy.c:508:12:inno_mipi_dphy_get_data	0	static
+rockchip-inno-mipi-dphy.c:497:12:inno_mipi_dphy_power_off	16	static
+rockchip-inno-mipi-dphy.c:552:12:inno_mipi_dphy_init	64	static
+rockchip-inno-mipi-dphy.c:320:13:inno_mipi_dphy_lane_timing_init	160	static
+rockchip-inno-mipi-dphy.c:470:12:inno_mipi_dphy_power_on	32	static

@@ -1,0 +1,111 @@
+DDR Version 1.08 20170320
+In
+Channel 0: DDR3, 800MHz
+Bus Width=32 Col=10 Bank=8 Row=15 CS=1 Die Bus-Width=16 Size=1024MB
+Channel 1: DDR3, 800MHz
+Bus Width=32 Col=10 Bank=8 Row=15 CS=1 Die Bus-Width=16 Size=1024MB
+256B stride
+ch 0 ddrconfig = 0x101, ddrsize = 0x20
+ch 1 ddrconfig = 0x101, ddrsize = 0x20
+pmugrf_os_reg[2] = 0x32817281, stride = 0x9
+OUT
+Boot1: 2017-03-07, version: 1.06
+CPUId = 0x0
+ChipType = 0x10, 1837
+SdmmcInit=2 0
+BootCapSize=100000
+UserCapSize=14910MB
+FwPartOffset=2000 , 100000
+SdmmcInit=0 20
+StorageInit ok = 65782
+LoadTrustBL
+No find bl30.bin
+No find bl32.bin
+RunBL31 0x10000
+NOTICE:  BL31: v1.3(debug):55aa0b4
+NOTICE:  BL31: Built : 16:55:03, Mar 31 2017
+INFO:    GICv3 with legacy support detected. ARM GICV3 driver initialized in EL3
+INFO:    boot cpu mask: 0
+INFO:    plat_rockchip_pmu_init(1089): pd status 3e
+INFO:    BL31: Initializing runtime services
+INFO:    BL31: Preparing for EL3 exit to normal world
+INFO:    Entry point address = 0x200000
+INFO:    SPSR = 0x3c9
+
+
+U-Boot 2017.02-RK3399-06 (Jan 23 2018 - 14:38:27)
+
+CPU: rk3399
+cpu version = 0
+CPU's clock information:
+    aplll = 816000000HZ
+    apllb = 24000000HZ
+    gpll = 800000000HZ
+               aclk_periph_h = 133333333HZ, hclk_periph_h = 66666666HZ, pclk_periph_h = 33333333HZ
+               aclk_periph_l0 = 100000000HZ, hclk_periph_l0 = 100000000HZ, pclk_periph_l0 = 50000000HZ
+               hclk_periph_l1 = 100000000HZ, pclk_periph_l1 = 50000000HZ
+    cpll = 800000000HZ
+    dpll = 792000000HZ
+    vpll = 24000000HZ
+    npll = 24000000HZ
+    ppll = 676000000HZ
+Board:  Rockchip platform Board
+Uboot as second level loader
+DRAM:  Found dram banks: 1
+Adding bank:0000000000200000(000000007fe00000)
+128 MiB
+SdmmcInit = 0 20
+storage init OK!
+Using default environment
+
+Writing env to storage... 
+done
+GetParam
+rk3399 led on
+remotectl v0.1
+pwm freq=0xb8320
+pwm_freq_nstime=0x52d
+Load FDT from resource image.
+power key: bank-0 pin-5
+usb bc: can find node by path: /dwc-control-usb/usb_bc
+dwc_otg_check_dpdm: usb bc disconnected
+pmic:rk808
+can't find dts node for pwm1
+set pwm voltage ok,pwm_id =2 vol=1000000,pwm_value=66
+CPU's clock information:
+    aplll = 816000000HZ
+    apllb = 24000000HZ
+    gpll = 800000000HZ
+               aclk_periph_h = 133333333HZ, hclk_periph_h = 66666666HZ, pclk_periph_h = 33333333HZ
+               aclk_periph_l0 = 100000000HZ, hclk_periph_l0 = 100000000HZ, pclk_periph_l0 = 50000000HZ
+               hclk_periph_l1 = 100000000HZ, pclk_periph_l1 = 50000000HZ
+    cpll = 800000000HZ
+    dpll = 792000000HZ
+    vpll = 24000000HZ
+    npll = 24000000HZ
+    ppll = 676000000HZ
+SecureBootEn = 0, SecureBootLock = 0
+
+#Boot ver: 2018-01-22#1.06
+empty serial no.
+normal boot.
+checkKey
+vbus = 0
+board_fbt_key_pressed: ir_keycode = 0x0, frt = 0
+no fuel gauge found
+no fuel gauge found
+failed to find phy node
+rockchip_dsi_panel_parse_cmds: dcs_cmd=5 len=8, cmd_cnt=2
+rockchip_dsi_panel_parse_cmds: dcs_cmd=5 len=8, cmd_cnt=2
+read logo on state from dts [1]
+no fuel gauge found
+ERROR: [get_entry_ram]: Cannot find logo.bmp!
+failed to display uboot logo
+ERROR: [get_entry_ram]: Cannot find logo_kernel.bmp!
+failed to display kernel logo
+checkKey
+vbus = 0
+board_fbt_key_pressed: ir_keycode = 0x0, frt = 0
+Hit any key to stop autoboot:  0 
+rkboot # 
+rkboot # 

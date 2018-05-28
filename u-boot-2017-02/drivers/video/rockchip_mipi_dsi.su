@@ -1,0 +1,2 @@
+rockchip_mipi_dsi.c:23:9:mipi_dsi_generic_write	64	static
+rockchip_mipi_dsi.c:58:9:mipi_dsi_dcs_write	64	static

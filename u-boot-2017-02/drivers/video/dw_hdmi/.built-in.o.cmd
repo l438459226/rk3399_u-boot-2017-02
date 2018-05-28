@@ -1,0 +1,1 @@
+cmd_drivers/video/dw_hdmi/built-in.o :=  /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.bfd     -r -o drivers/video/dw_hdmi/built-in.o drivers/video/dw_hdmi/rockchip_dw_hdmi.o drivers/video/dw_hdmi/rockchip_dw_hdmi_reg.o drivers/video/dw_hdmi/rk_edid.o 

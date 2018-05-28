@@ -1,0 +1,13 @@
+rockchip_display.c:74:12:get_panel_node.isra.1	64	static
+rockchip_display.c:447:12:display_init	224	static
+rockchip_display.c:110:5:connector_pclist_parse_dt	96	static
+rockchip_display.c:249:6:connector_panel_power_prepare	48	static
+rockchip_display.c:613:12:display_logo	48	static
+rockchip_display.c:279:6:connector_panel_power_unprepare	32	static
+rockchip_display.c:303:5:drm_mode_vrefresh	0	static
+rockchip_display.c:725:29:find_or_alloc_logo_cache	48	static
+rockchip_display.c:751:12:load_bmp_logo	96	static
+rockchip_display.c:822:6:rockchip_show_bmp	48	static
+rockchip_display.c:840:6:rockchip_show_logo	64	static
+rockchip_display.c:855:5:rockchip_display_init	144	static
+rockchip_display.c:964:6:rockchip_display_fixup	192	static

@@ -1,0 +1,10 @@
+rockchip_analogix_dp.c:896:13:rockchip_analogix_dp_deinit	0	static
+rockchip_analogix_dp.c:915:12:rockchip_analogix_dp_prepare	0	static
+rockchip_analogix_dp.c:967:12:rockchip_analogix_dp_disable	0	static
+rockchip_analogix_dp.c:65:13:analogix_dp_set_enhanced_mode	48	static
+rockchip_analogix_dp.c:224:13:analogix_dp_set_lane_link_training	0	static
+rockchip_analogix_dp.c:838:12:rockchip_analogix_dp_init	64	static
+rockchip_analogix_dp.c:280:13:analogix_dp_get_adjust_training_lane	0	static
+rockchip_analogix_dp.c:272:13:analogix_dp_reduce_link_rate	32	static
+rockchip_analogix_dp.c:938:12:rockchip_analogix_dp_enable	192	static
+rockchip_analogix_dp.c:901:12:rockchip_analogix_dp_get_edid	128	static

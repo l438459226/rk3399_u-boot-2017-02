@@ -1,0 +1,13 @@
+rk32_hdmi.c:1148:12:hdmi_dev_config_vsi	0	static
+rk32_hdmi.c:135:13:rockchip_hdmiv2_i2cm_reset	0	static
+rk32_hdmi.c:190:12:rockchip_hdmiv2_i2cm_read_data	96	static
+rk32_hdmi.c:158:13:rockchip_hdmiv2_i2cm_write_data	80	static
+rk32_hdmi.c:386:41:get_phy_ext_tab	64	static
+rk32_hdmi.c:567:12:rockchip_hdmiv2_write_phy	96	static
+rk32_hdmi.c:256:13:rockchip_hdmiv2_i2cm_clk_init	0	static
+rk32_hdmi.c:334:13:rockchip_hdmiv2_scdc_init	48	static
+rk32_hdmi.c:371:13:rockchip_hdmiv2_scdc_set_tmds_rate	32	static
+rk32_hdmi.c:438:12:hdmi_dev_read_edid	128	static
+rk32_hdmi.c:525:5:rockchip_hdmiv2_read_phy	80	static
+rk32_hdmi.c:2062:12:rk32_hdmi_hardware_init	64	static
+rk32_hdmi.c:2099:6:rk32_hdmi_probe	32	static

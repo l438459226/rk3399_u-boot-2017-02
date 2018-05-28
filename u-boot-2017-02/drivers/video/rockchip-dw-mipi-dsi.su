@@ -1,0 +1,9 @@
+rockchip-dw-mipi-dsi.c:373:13:dw_mipi_dsi_phy_write	0	static
+rockchip-dw-mipi-dsi.c:858:13:rockchip_dw_mipi_dsi_deinit	0	static
+rockchip-dw-mipi-dsi.c:812:12:rockchip_dw_mipi_dsi_init	64	static
+rockchip-dw-mipi-dsi.c:509:12:dw_mipi_dsi_gen_pkt_hdr_write	64	static
+rockchip-dw-mipi-dsi.c:588:16:rockchip_dw_mipi_dsi_transfer	96	static
+rockchip-dw-mipi-dsi.c:626:13:dw_mipi_dsi_set_mode.part.2	0	static
+rockchip-dw-mipi-dsi.c:928:12:rockchip_dw_mipi_dsi_enable	48	static
+rockchip-dw-mipi-dsi.c:960:12:rockchip_dw_mipi_dsi_disable	32	static
+rockchip-dw-mipi-dsi.c:879:12:rockchip_dw_mipi_dsi_prepare	48	static

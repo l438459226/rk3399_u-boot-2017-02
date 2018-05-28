@@ -1,0 +1,5 @@
+rockchip_vop.c:333:12:rockchip_vop_prepare	0	static
+rockchip_vop.c:338:12:rockchip_vop_enable	0	static
+rockchip_vop.c:349:12:rockchip_vop_disable	0	static
+rockchip_vop.c:24:12:rockchip_vop_init	128	static
+rockchip_vop.c:285:12:rockchip_vop_set_plane	112	static

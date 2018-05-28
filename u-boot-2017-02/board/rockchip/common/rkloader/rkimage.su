@@ -1,0 +1,10 @@
+rkimage.c:20:12:rkimg_load_image	624	static
+rkimage.c:381:12:rkimg_handleDirectDownload	48	static
+rkimage.c:446:12:rkimg_handleSparseDownload	96	static
+rkimage.c:55:5:rkimage_load_image	48	static
+rkimage.c:221:5:rkimage_partition_erase	0	static
+rkimage.c:303:5:rkimage_store_image	112	static
+rkimage.c:588:5:rkimage_handleDownload	64	static
+rkimage.c:659:18:rkimage_load_fdt	320	static
+rkimage.c:705:18:rkimage_load_fdt_ram	320	static
+rkimage.c:723:6:rkimage_prepare_fdt	304	static

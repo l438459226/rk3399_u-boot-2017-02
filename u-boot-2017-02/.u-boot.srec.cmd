@@ -1,0 +1,1 @@
+cmd_u-boot.srec := /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-objcopy  -j .text -j .rodata -j .data -j .u_boot_list -j .rela.dyn -j .loader_tag --gap-fill=0xff -O srec u-boot u-boot.srec

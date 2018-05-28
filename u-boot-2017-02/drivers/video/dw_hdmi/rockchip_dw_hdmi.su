@@ -1,0 +1,8 @@
+rockchip_dw_hdmi.c:127:12:rockchip_dw_hdmi_prepare	0	static
+rockchip_dw_hdmi.c:152:12:rockchip_dw_hdmi_disable	0	static
+rockchip_dw_hdmi.c:132:12:rockchip_dw_hdmi_enable	32	static
+rockchip_dw_hdmi.c:211:12:rockchip_dw_hdmi_get_edid	48	static
+rockchip_dw_hdmi.c:160:12:rockchip_dw_hdmi_get_timing	48	static
+rockchip_dw_hdmi.c:193:12:rockchip_dw_hdmi_detect	0	static
+rockchip_dw_hdmi.c:113:13:rockchip_dw_hdmi_deinit	32	static
+rockchip_dw_hdmi.c:49:12:rockchip_dw_hdmi_init	64	static

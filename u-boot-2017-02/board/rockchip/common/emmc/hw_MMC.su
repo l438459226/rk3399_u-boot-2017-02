@@ -1,0 +1,7 @@
+hw_MMC.c:277:7:_MMCDoTuning.part.0	656	dynamic,bounded
+hw_MMC.c:56:7:MMC_GetMID	0	static
+hw_MMC.c:277:7:_MMCDoTuning	0	static
+hw_MMC.c:570:7:MMC_AccessBootPartition	32	static
+hw_MMC.c:602:7:MMC_SetBootBusWidth	32	static
+hw_MMC.c:649:7:MMC_SwitchBoot	32	static
+hw_MMC.c:684:6:MMC_Init	208	static

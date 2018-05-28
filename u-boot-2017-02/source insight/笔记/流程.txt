@@ -1,0 +1,68 @@
+arch/arm/cpu/armv8/start.S
+
+arch/arm/lib  _main
+
+common/board_f.o void board_init_f(ulong boot_flags)   init_sequence_f[]
+
+
+
+int rk32_dsi_refresh(int xpos, int ypos, int xsize, int ysize)
+{
+	unsigned int x0 = xpos;
+	unsigned int y0 = ypos;
+	unsigned int x1 = x0 + xsize - 1;
+	unsigned int y1 = y0 + ysize - 1;
+
+	unsigned char x0_MSB = ((x0 >> 8) & 0xff);
+	unsigned char x0_LSB = (x0 & 0xff);
+	unsigned char x1_MSB = ((x1 >> 8) & 0xff);
+	unsigned char x1_LSB = (x1 & 0xff);
+	unsigned char y0_MSB = ((y0 >> 8) & 0xff);
+	unsigned char y0_LSB = (y0 & 0xff);
+	unsigned char y1_MSB = ((y1 >> 8) & 0xff);
+	unsigned char y1_LSB = (y1 & 0xff);
+
+	unsigned char set_col_cmd[7] = {0};
+	unsigned char set_page_cmd[7] = {0};
+	unsigned char wms[3] = {0};
+	u32 len;
+
+	set_col_cmd[0] = HSDT;
+	set_col_cmd[1] = 0x39;
+	set_col_cmd[2] = 0x2a;
+	set_col_cmd[3] = x0_MSB;
+	set_col_cmd[4] = x0_LSB;
+	set_col_cmd[5] = x1_MSB;
+	set_col_cmd[6] = x1_LSB;
+
+	len = ARRAY_SIZE(set_col_cmd);
+	rk32_mipi_dsi_send_packet(dsi0, set_col_cmd, len);
+	if (rk_mipi_get_dsi_num() == 2)
+		rk32_mipi_dsi_send_packet(dsi1, set_col_cmd, len);
+
+	set_page_cmd[0] = HSDT;
+	set_page_cmd[1] = 0x39;
+	set_page_cmd[2] = 0x2b;
+	set_page_cmd[3] = y0_MSB;
+	set_page_cmd[4] = y0_LSB;
+	set_page_cmd[5] = y1_MSB;
+	set_page_cmd[6] = y1_LSB;
+
+	len = ARRAY_SIZE(set_page_cmd);
+	rk32_mipi_dsi_send_packet(dsi0, set_page_cmd, len);
+	if (rk_mipi_get_dsi_num() == 2)
+		rk32_mipi_dsi_send_packet(dsi1, set_page_cmd, len);
+
+	/* write_memory_start */
+	wms[0] = HSDT;
+	wms[1] = 0x39;
+	wms[2] = 0x2C;
+
+	len = ARRAY_SIZE(wms);
+	rk32_mipi_dsi_send_packet(dsi0, wms, len);
+	if (rk_mipi_get_dsi_num() == 2)
+		rk32_mipi_dsi_send_packet(dsi1, wms, len);
+
+	return 0;
+}
+

@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/built-in.o :=  /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.bfd     -r -o drivers/usb/gadget/built-in.o drivers/usb/gadget/core.o drivers/usb/gadget/ep0.o drivers/usb/gadget/dwc3_ep0.o drivers/usb/gadget/dwc3_rk_udc.o 

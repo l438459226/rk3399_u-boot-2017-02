@@ -1,0 +1,6 @@
+rkloader.c:43:7:rkloader_CopyFlash2Memory	65680	static
+rkloader.c:71:5:rkloader_CopyMemory2Flash	64	static
+rkloader.c:172:6:rkloader_change_cmd_for_recovery	65712	static
+rkloader.c:205:5:rkloader_run_misc_cmd	1680	static
+rkloader.c:257:6:rkloader_fixInitrd	176	static
+rkloader.c:294:5:rkloader_set_bootloader_msg	1632	static

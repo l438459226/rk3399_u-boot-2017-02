@@ -1,0 +1,17 @@
+rockchip_dw_hdmi_reg.c:1145:12:hdmi_dev_config_vsi	0	static
+rockchip_dw_hdmi_reg.c:134:13:rockchip_hdmiv2_i2cm_reset	0	static
+rockchip_dw_hdmi_reg.c:189:12:rockchip_hdmiv2_i2cm_read_data	96	static
+rockchip_dw_hdmi_reg.c:157:13:rockchip_hdmiv2_i2cm_write_data	80	static
+rockchip_dw_hdmi_reg.c:385:41:get_phy_ext_tab	64	static
+rockchip_dw_hdmi_reg.c:566:12:rockchip_hdmiv2_write_phy	96	static
+rockchip_dw_hdmi_reg.c:524:12:rockchip_hdmiv2_read_phy.part.7	80	static
+rockchip_dw_hdmi_reg.c:255:13:rockchip_hdmiv2_i2cm_clk_init	0	static
+rockchip_dw_hdmi_reg.c:333:13:rockchip_hdmiv2_scdc_init	48	static
+rockchip_dw_hdmi_reg.c:370:13:rockchip_hdmiv2_scdc_set_tmds_rate	32	static
+rockchip_dw_hdmi_reg.c:437:5:hdmi_dev_read_edid	128	static
+rockchip_dw_hdmi_reg.c:654:5:hdmi_dev_detect_hotplug	0	static
+rockchip_dw_hdmi_reg.c:664:6:hdmi_dev_init	32	static
+rockchip_dw_hdmi_reg.c:1885:5:hdmi_dev_config_video	64	static
+rockchip_dw_hdmi_reg.c:1997:6:hdmi_dev_hdcp_start	0	static
+rockchip_dw_hdmi_reg.c:2034:5:hdmi_dev_control_output	0	static
+rockchip_dw_hdmi_reg.c:2050:5:hdmi_dev_insert	0	static

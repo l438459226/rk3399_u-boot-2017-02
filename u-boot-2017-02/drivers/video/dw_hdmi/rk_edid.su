@@ -1,0 +1,8 @@
+rk_edid.c:329:13:hdmi_add_vic	0	static
+rk_edid.c:364:13:calc_mode_timings	64	static
+rk_edid.c:600:12:get_std_timing	16	static
+rk_edid.c:50:12:hdmi_feature_filter.isra.0	0	static
+rk_edid.c:1227:13:hdmi_find_best_edid_mode	48	static
+rk_edid.c:281:33:dw_hdmi_vic2timing	0	static
+rk_edid.c:1399:26:hdmi_edid_get_timing	288	static
+rk_edid.c:1417:6:dw_rk_hdmi_register	4272	dynamic,bounded

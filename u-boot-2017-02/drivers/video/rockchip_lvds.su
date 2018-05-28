@@ -1,0 +1,6 @@
+rockchip_lvds.c:355:12:rockchip_lvds_prepare	0	static
+rockchip_lvds.c:378:12:rockchip_lvds_disable	0	static
+rockchip_lvds.c:157:12:rockchip_lvds_pwr_on	32	static
+rockchip_lvds.c:365:12:rockchip_lvds_enable	32	static
+rockchip_lvds.c:347:13:rockchip_lvds_deinit	0	static
+rockchip_lvds.c:268:12:rockchip_lvds_init	128	static

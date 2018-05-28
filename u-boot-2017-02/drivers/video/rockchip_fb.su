@@ -1,0 +1,12 @@
+rockchip_fb.c:98:5:rk_fb_vidinfo_to_win	0	static
+rockchip_fb.c:114:6:rk_fb_vidinfo_to_screen	0	static
+rockchip_fb.c:153:5:rk_fb_find_lcdc_node_dt	48	static
+rockchip_fb.c:176:5:rk_fb_pwr_ctr_parse_dt	96	static
+rockchip_fb.c:241:5:rk_fb_pwr_enable	48	static
+rockchip_fb.c:263:5:rk_fb_pwr_disable	32	static
+rockchip_fb.c:282:5:rk_fb_parse_dt	112	static
+rockchip_fb.c:473:6:lcd_ctrl_init	48	static
+rockchip_fb.c:547:6:lcd_enable	0	static
+rockchip_fb.c:552:6:lcd_pandispaly	0	static
+rockchip_fb.c:557:6:lcd_standby	0	static
+rockchip_fb.c:563:6:lcd_setcolreg	0	static
