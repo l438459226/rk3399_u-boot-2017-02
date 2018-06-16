@@ -185,9 +185,113 @@ static int rk808_i2c_probe(u32 bus, u32 addr)
 		return -ENODEV;
 	else
 		return 0;
-	
-	
 }
+
+#define  LM36923_I2C_ADDR		0x36	
+#define	BL_REG_RESET		0x01
+#define	BL_REG_MODE			0x11
+#define	BL_REG_DEVEICE_ON	0x10
+#define	BL_REG_CODE_H		0x19
+#define	BL_REG_CODE_L		0x18
+
+typedef enum 
+{
+	BL_CHN1_NONE = 0,
+	BL_CHN1 = 0x01, 
+	BL_CHN2 = 0x02, 
+	BL_CHN3 = 0x03,
+	BL_CHN_ALL	= 0x0E,
+	BL_CHN_MAX = 0,
+}BL_CHN_TypeDef;
+
+
+
+typedef enum 
+{
+	BL_MODE_I2C = 0,
+	BL_MODE_PWM,
+	BL_MODE_I2C_PWM_MODE10,
+	BL_MODE_I2C_PWM_MODE11,
+}BL_MODE_TypeDef;
+
+
+
+typedef enum 
+{
+	LIN_MAP = 0,
+	EXP_MAP,
+}MAP_TypeDef;
+
+static int LM36923_I2C_probe(u32 bus, u32 addr)	//	I2C_CH4
+{
+	char val;
+	int ret;
+	i2c_set_bus_num(bus);
+	i2c_init(RK808_I2C_SPEED, 0);//200k
+	ret  = i2c_probe(addr);
+	if (ret < 0)
+		return -ENODEV;
+	val = i2c_reg_read(addr, 0x2f);
+	if (val == 0xff)
+		return -ENODEV;
+	else
+		return 0;
+}
+void LM36923_Set_Mode(BL_MODE_TypeDef mode,MAP_TypeDef mapp)
+{
+	u8 temp = 0x00;
+		
+	temp  = (u8)(mapp << 7) | 0x01;			//
+
+	i2c_reg_write(LM36923_I2C_ADDR, BL_REG_MODE, temp | (mode<<5));
+}
+void LM36923_Set_Current(u16 val)
+{
+	i2c_reg_write(LM36923_I2C_ADDR,BL_REG_CODE_L,val&0x07);	
+	i2c_reg_write(LM36923_I2C_ADDR,BL_REG_CODE_H,(u8)(val>>3));	
+}
+
+int LM36923_Init(u32 val)	//	I2C_CH4
+{
+	char val;
+	int ret;
+	int temp,value1;
+
+
+	LM36923_I2C_probe(I2C_CH4,LM36923_I2C_ADDR);
+
+	i2c_reg_write(LM36923_I2C_ADDR, BL_REG_DEVEICE_ON, 0x01);
+	//delay_ms(10);
+	LM36923_Set_Mode(BL_MODE_I2C,LIN_MAP);
+	//Delay_ms(10);
+
+	
+	temp = i2c_reg_read(LM36923_I2C_ADDR,BL_REG_MODE)
+	printf("BL:REG_MODE:0x%x",temp);
+	i2c_reg_write(LM36923_I2C_ADDR, 0x13,i2c_reg_read(LM36923_I2C_ADDR, 0x13) | (0x01<<4));
+
+	i2c_reg_write(LM36923_I2C_ADDR, BL_REG_DEVEICE_ON, 0x0f);
+
+	printf("\r\nbl ma = %d\r\n",val);
+	value = ((float)2047)/25;
+	value *= 100;
+	value *= val;
+	value1 = (u16)(((u32)(value))/100);
+	printf("\r\nbl value = %d\r\n",value1);
+
+	LM36923_Set_Current(value1);
+	
+	temp = i2c_reg_read(LM36923_I2C_ADDR, BL_REG_CODE_H);
+	printf("REG_19 = 0x%x\r\n",temp);
+	temp = i2c_reg_read(LM36923_I2C_ADDR, BL_REG_CODE_L);
+	printf("REG_18 = 0x%x\r\n",temp);	
+	temp = i2c_reg_read(LM36923_I2C_ADDR, 0x1f);
+	printf("REG_ERR = 0x%x\r\n",temp);	
+
+	return 0;
+}
+
+
 
 int rk808_regulator_disable(int num_regulator)
 {

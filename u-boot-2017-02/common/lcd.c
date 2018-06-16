@@ -537,6 +537,14 @@ U_BOOT_CMD(
 	""
 );
 
+
+
+U_BOOT_CMD(
+	cls,	1,	1,	do_lcd_clear,
+	"clear screen",
+	""
+);
+
 /*----------------------------------------------------------------------*/
 
 static int lcd_init(void *lcdbase)

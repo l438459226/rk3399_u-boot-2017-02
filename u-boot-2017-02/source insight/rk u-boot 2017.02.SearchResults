@@ -1,0 +1,1436 @@
+---- rk_i2c_write Matches (4 in 1 files) ----
+Rk_i2c.c (drivers\i2c):static int rk_i2c_write(struct rk_i2c *i2c, uchar chip, uint reg, uint r_len, uchar *buf, uint b_len)
+Rk_i2c.c (drivers\i2c):	i2c_info("rk_i2c_write: chip = %d, reg = %d, r_len = %d, b_len = %d\n", chip, reg, r_len, b_len);
+Rk_i2c.c (drivers\i2c):	return rk_i2c_write(i2c, chip, addr, alen, buf, len);
+Rk_i2c.c (drivers\i2c):	return rk_i2c_write(i2c, chip, 0, 0, NULL, 0);
+---- rk_i2c_get_base Matches (6 in 1 files) ----
+Rk_i2c.c (drivers\i2c):static inline void *rk_i2c_get_base(void)
+Rk_i2c.c (drivers\i2c):	struct rk_i2c *i2c = (struct rk_i2c *)rk_i2c_get_base();
+Rk_i2c.c (drivers\i2c):	struct rk_i2c *i2c = (struct rk_i2c *)rk_i2c_get_base();
+Rk_i2c.c (drivers\i2c):	struct rk_i2c *i2c = (struct rk_i2c *)rk_i2c_get_base();
+Rk_i2c.c (drivers\i2c):	struct rk_i2c *i2c = (struct rk_i2c *)rk_i2c_get_base();
+Rk_i2c.c (drivers\i2c):	struct rk_i2c *i2c = (struct rk_i2c *)rk_i2c_get_base();
+---- 808 Matches (2 in 2 files) ----
+Ati_radeon_fb.c (drivers\video):		mode->crtc_h_sync_strt_wid = CRTC_HSYNC_STRT_WID_VAL(808,10);
+Bzlib_randtable.c (lib\bzip2):   469, 68, 770, 919, 190, 373, 294, 822, 808, 206,
+---- pmic_rk808 Matches (9 in 5 files) ----
+.built-in.o.cmd (drivers\power\pmic):cmd_drivers/power/pmic/built-in.o :=  /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.bfd     -r -o drivers/power/pmic/built-in.o drivers/power/pmic/pmic_rk808.o drivers/power/pmic/pmic_rk816.o drivers/power/pmic/pmic_rk818.o drivers/power/pmic/pmic_act8846.o drivers/power/pmic/pmic_ricoh619.o 
+.pmic_rk808.o.cmd (drivers\power\pmic):cmd_drivers/power/pmic/pmic_rk808.o := /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -Wp,-MD,drivers/power/pmic/.pmic_rk808.o.d  -nostdinc -isystem /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x-google/include -Iinclude  -I/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include -include /home/topeet/Desktop/Android7.1/u-boot/include/linux/kconfig.h -D__KERNEL__ -D__UBOOT__ -DCONFIG_SYS_TEXT_BASE=0x00200000 -Wall -Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding -Os -fno-stack-protector -g -fstack-usage -Wno-format-nonliteral -Werror=date-time -D__ARM__ -march=armv8-a -fno-pic -mgeneral-regs-only -mstrict-align -ffunction-sections -fdata-sections -fno-common -ffixed-r9 -fno-common -ffixed-x18 -pipe    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(pmic_rk808)"  -D"KBUILD_MODNAME=KBUILD_STR(pmic_rk808)" -c -o drivers/power/pmic/pmic_rk808.o drivers/power/pmic/pmic_rk808.c
+.pmic_rk808.o.cmd (drivers\power\pmic):source_drivers/power/pmic/pmic_rk808.o := drivers/power/pmic/pmic_rk808.c
+.pmic_rk808.o.cmd (drivers\power\pmic):deps_drivers/power/pmic/pmic_rk808.o := \
+.pmic_rk808.o.cmd (drivers\power\pmic):drivers/power/pmic/pmic_rk808.o: $(deps_drivers/power/pmic/pmic_rk808.o)
+.pmic_rk808.o.cmd (drivers\power\pmic):$(deps_drivers/power/pmic/pmic_rk808.o):
+Building.txt (source insight\笔记):  CC      drivers/power/pmic/pmic_rk808.o
+Pmic_rk808.c (drivers\power\pmic):struct pmic_rk808 rk808;
+Rk808_pmic.h (include\power):struct pmic_rk808 {
+---- rk808_i2c_probe Matches (2 in 1 files) ----
+Pmic_rk808.c (drivers\power\pmic):static int rk808_i2c_probe(u32 bus, u32 addr)
+Pmic_rk808.c (drivers\power\pmic):	ret = rk808_i2c_probe(bus, addr);
+---- RK808_I2C_ADDR Matches (27 in 2 files) ----
+Pmic_rk808.c (drivers\power\pmic):		i2c_reg_write(RK808_I2C_ADDR, RK808_DCDC_EN_REG,
+Pmic_rk808.c (drivers\power\pmic):			i2c_reg_read(RK808_I2C_ADDR, RK808_DCDC_EN_REG) &(~(1 << num_regulator))); /*enable dcdc*/
+Pmic_rk808.c (drivers\power\pmic):		i2c_reg_write(RK808_I2C_ADDR, RK808_DCDC_EN_REG,
+Pmic_rk808.c (drivers\power\pmic):			i2c_reg_read(RK808_I2C_ADDR,RK808_DCDC_EN_REG) &(~(1 << 5))); /*enable switch1*/
+Pmic_rk808.c (drivers\power\pmic):		i2c_reg_write(RK808_I2C_ADDR, RK808_DCDC_EN_REG,
+Pmic_rk808.c (drivers\power\pmic):			i2c_reg_read(RK808_I2C_ADDR,RK808_DCDC_EN_REG) &(~(1 << 6))); /*enable switch2*/
+Pmic_rk808.c (drivers\power\pmic):	 	i2c_reg_write(RK808_I2C_ADDR, RK808_LDO_EN_REG,
+Pmic_rk808.c (drivers\power\pmic):			i2c_reg_read(RK808_I2C_ADDR,RK808_LDO_EN_REG) &(~(1 << (num_regulator -4)))); /*enable ldo*/
+Pmic_rk808.c (drivers\power\pmic):	debug("1 %s %d dcdc_en = %08x ldo_en =%08x\n", __func__, num_regulator, i2c_reg_read(RK808_I2C_ADDR,RK808_DCDC_EN_REG), i2c_reg_read(RK808_I2C_ADDR,RK808_LDO_EN_REG));
+Pmic_rk808.c (drivers\power\pmic):		i2c_reg_write(RK808_I2C_ADDR, RK808_DCDC_EN_REG,
+Pmic_rk808.c (drivers\power\pmic):			i2c_reg_read(RK808_I2C_ADDR, RK808_DCDC_EN_REG) |(1 << num_regulator)); /*enable dcdc*/
+Pmic_rk808.c (drivers\power\pmic):		i2c_reg_write(RK808_I2C_ADDR, RK808_DCDC_EN_REG,
+Pmic_rk808.c (drivers\power\pmic):			i2c_reg_read(RK808_I2C_ADDR,RK808_DCDC_EN_REG) |(1 << 5)); /*enable switch1*/
+Pmic_rk808.c (drivers\power\pmic):		i2c_reg_write(RK808_I2C_ADDR, RK808_DCDC_EN_REG,
+Pmic_rk808.c (drivers\power\pmic):			i2c_reg_read(RK808_I2C_ADDR,RK808_DCDC_EN_REG) |(1 << 6)); /*enable switch2*/
+Pmic_rk808.c (drivers\power\pmic):	 	i2c_reg_write(RK808_I2C_ADDR, RK808_LDO_EN_REG,
+Pmic_rk808.c (drivers\power\pmic):			i2c_reg_read(RK808_I2C_ADDR,RK808_LDO_EN_REG) |(1 << (num_regulator -4))); /*enable ldo*/
+Pmic_rk808.c (drivers\power\pmic):	debug("1 %s %d dcdc_en = %08x ldo_en =%08x\n", __func__, num_regulator, i2c_reg_read(RK808_I2C_ADDR,RK808_DCDC_EN_REG), i2c_reg_read(RK808_I2C_ADDR,RK808_LDO_EN_REG));
+Pmic_rk808.c (drivers\power\pmic):		i2c_reg_write(RK808_I2C_ADDR, rk808_BUCK_SET_VOL_REG(num_regulator),
+Pmic_rk808.c (drivers\power\pmic):			(i2c_reg_read(RK808_I2C_ADDR, rk808_BUCK_SET_VOL_REG(num_regulator)) & 0x3f) | val);
+Pmic_rk808.c (drivers\power\pmic):		debug("1 %s %d dcdc_vol = %08x\n", __func__, num_regulator, i2c_reg_read(RK808_I2C_ADDR, rk808_BUCK_SET_VOL_REG(num_regulator)));
+Pmic_rk808.c (drivers\power\pmic):	i2c_reg_write(RK808_I2C_ADDR, rk808_LDO_SET_VOL_REG(num_regulator),
+Pmic_rk808.c (drivers\power\pmic):		((i2c_reg_read(RK808_I2C_ADDR, rk808_LDO_SET_VOL_REG(num_regulator)) & (~0x3f)) | val));
+Pmic_rk808.c (drivers\power\pmic):	debug("1 %s %d %d ldo_vol =%08x\n", __func__, num_regulator, val, i2c_reg_read(RK808_I2C_ADDR, rk808_LDO_SET_VOL_REG(num_regulator)));
+Rk808_pmic.h (include\power):#define RK808_I2C_ADDR 		0x1b
+---- i2c_probe Matches (85 in 61 files) ----
+44x_spd_ddr.c (arch\powerpc\cpu\ppc4xx):	if (i2c_probe(chip) == 0) {
+44x_spd_ddr2.c (arch\powerpc\cpu\ppc4xx):	if (i2c_probe(chip) == 0)
+Beagle.c (board\ti\beagle):	if (i2c_probe(EXPANSION_EEPROM_I2C_ADDRESS) == 1) {
+Bfin-twi_i2c.c (drivers\i2c): * i2c_probe - test if a chip exists at a given i2c address
+Bfin-twi_i2c.c (drivers\i2c):int i2c_probe(uchar chip)
+Board.c (board\siemens\draco):	if (i2c_probe(CONFIG_SYS_I2C_EEPROM_ADDR)) {
+Board.c (board\siemens\pxm2):	if (i2c_probe(PMIC_CTRL_I2C_ADDR))
+Board.c (board\ti\am335x):	if (i2c_probe(CONFIG_SYS_I2C_EEPROM_ADDR)) {
+Board.c (board\ti\am335x):		if (i2c_probe(TPS65217_CHIP_PM))
+Board.c (board\ti\am335x):		if (i2c_probe(TPS65910_CTRL_I2C_ADDR))
+Board.c (board\ti\am43xx):	if (i2c_probe(CONFIG_SYS_I2C_EEPROM_ADDR)) {
+Board.c (board\ti\am43xx):	if (i2c_probe(TPS65218_CHIP_PM))
+Bq25700_charger.c (drivers\power\charge):	ret = i2c_probe(addr);
+Cmd_eeprom.c (common):	return (i2c_probe (chip));
+Cmd_i2c.c (common):		if (i2c_probe(j) == 0) {
+Common.c (board\bur\common):	if (i2c_probe(TPS65217_CHIP_PM)) {
+Denali_spd_ddr2.c (arch\powerpc\cpu\ppc4xx):	if (0 != i2c_probe(chip) || 0 != i2c_read(chip, addr, 1, data, 1)) {
+Designware_i2c.c (drivers\i2c): * i2c_probe - Probe the i2c chip
+Designware_i2c.c (drivers\i2c):int i2c_probe(uchar chip)
+Ec_battery.c (drivers\power\battery):	ret  = i2c_probe(addr);
+Eeprom.c (board\gateworks\gw_ventana):		    0 == i2c_probe(GSC_EEPROM_ADDR))
+Factoryset.c (board\siemens\common):	if (i2c_probe(i2c_addr))
+Fg_cw201x.c (drivers\power\fuel_gauge):	ret = i2c_probe(addr);
+Fusb302.c (drivers\power\mfd):	ret = i2c_probe(addr);
+Gw_ventana.c (board\gateworks\gw_ventana):		i2c_probe(dev->addr) == 0;
+I2c.c (arch\powerpc\cpu\mpc512x):int i2c_probe (uchar chip)
+I2c.c (arch\powerpc\cpu\mpc5xxx):int i2c_probe(uchar chip)
+I2c.c (arch\powerpc\cpu\mpc824x\drivers\i2c):int i2c_probe (uchar chip)
+I2c.c (arch\powerpc\cpu\mpc8260):int i2c_probe(uchar chip)
+I2c.c (arch\powerpc\cpu\mpc8xx):int i2c_probe(uchar chip)
+I2c.c (board\esd\cpci750):int i2c_probe (uchar chip)
+I2c.c (board\esd\cpci750):	DP (puts ("i2c_probe\n"));
+I2c.c (board\marvell\common):int i2c_probe (uchar chip)
+I2c.c (board\marvell\common):	DP (puts ("i2c_probe\n"));
+I2c.c (post\drivers):		if (i2c_probe (i) == 0)
+I2c.c (post\drivers):		if (i2c_probe(i) != 0)
+I2c.h (include):int i2c_probe(uint8_t chip);
+I2c.h (include):int i2c_probe(uchar chip);
+I2c_core.c (drivers\i2c):		/* i2c_probe() */
+I2c_core.c (drivers\i2c):int i2c_probe(uint8_t chip)
+Io64.c (board\gdsys\405ex):	if (i2c_probe(0x22)) { /* i2c_probe returns 0 on success */
+Iocon.c (board\gdsys\405ep):		if (i2c_probe(mclink_controllers[k]))
+Iocon.c (board\gdsys\405ep):	if (i2c_probe(0x20)) { /* i2c_probe returns 0 on success */
+Korat.c (board\korat):	if (0 != i2c_probe(MAN_DATA_EEPROM_ADDR) ||
+Mux.c (board\ti\am335x):	if (i2c_probe(I2C_CPLD_ADDR))
+Mvtwsi.c (drivers\i2c): * Common to i2c_probe, i2c_read and i2c_write.
+Mv_i2c.c (drivers\i2c): * i2c_probe: - Test if a chip answers for a given i2c address
+Mv_i2c.c (drivers\i2c):int i2c_probe(uchar chip)
+Mx53loco.c (board\freescale\mx53loco):	if (!i2c_probe(CONFIG_SYS_DIALOG_PMIC_I2C_ADDR))
+Mx53loco.c (board\freescale\mx53loco):	if (!i2c_probe(CONFIG_SYS_DIALOG_PMIC_I2C_ADDR)) {
+Mx53loco.c (board\freescale\mx53loco):	if (!i2c_probe(CONFIG_SYS_FSL_PMIC_I2C_ADDR)) {
+Mx6boards.c (board\embest\mx6boards):		(0 == i2c_probe(dev->addr));
+Mxs_i2c.c (drivers\i2c):int i2c_probe(uchar chip)
+Nitrogen6x.c (board\boundary\nitrogen6x):		(0 == i2c_probe(dev->addr)));
+Omap24xx_i2c.c (drivers\i2c): * New i2c_read, i2c_write and i2c_probe functions, tested on OMAP4
+Omap24xx_i2c.c (drivers\i2c): * - New i2c_probe, performs write access vs read. The old probe could
+Omap24xx_i2c.c (drivers\i2c): * i2c_probe: Use write access. Allows to identify addresses that are
+Omap24xx_i2c.c (drivers\i2c):			printf("i2c_probe: pads on bus %d probably not configured (status=0x%x)\n",
+Osd.c (board\gdsys\common):	if (!i2c_probe(ICS8N3QV01_I2C_ADDR)) {
+Osd.c (board\gdsys\common):	if (!i2c_probe(CH7301_I2C_ADDR)) {
+Osd.c (board\gdsys\common):	if (!i2c_probe(SIL1178_SLAVE_I2C_ADDRESS)) {
+Osd.c (board\gdsys\common):	if (!i2c_probe(DP501_I2C_ADDR)) {
+Overo.c (board\overo):	if (i2c_probe(EXPANSION_EEPROM_I2C_ADDRESS) == 1) {
+Pca9564_i2c.c (drivers\i2c):int i2c_probe(uchar chip)
+Pmic_act8846.c (drivers\power\pmic):	ret = i2c_probe(addr);
+Pmic_act8931.c (drivers\power\pmic):	ret = i2c_probe(addr);
+Pmic_ricoh619.c (drivers\power\pmic):	ret = i2c_probe(addr);
+Pmic_rk808.c (drivers\power\pmic):	ret  = i2c_probe(addr);
+Pmic_rk808.c (drivers\power\pmic):	ret  = i2c_probe(addr);
+Pmic_rk816.c (drivers\power\pmic):	ret  = i2c_probe(addr);
+Pmic_rk818.c (drivers\power\pmic):	ret  = i2c_probe(addr);
+Pmic_rt5025.c (drivers\power\pmic):	ret  = i2c_probe(addr);
+Pmic_rt5036.c (drivers\power\pmic):	ret  = i2c_probe(addr);
+Power_i2c.c (drivers\power):	if (i2c_probe(pmic_i2c_addr)) {
+Rk_i2c.c (drivers\i2c):int i2c_probe(uchar chip)
+Rk_i2c.c (drivers\i2c):	i2c_info("i2c_probe\n");
+Sh_sh7734_i2c.c (drivers\i2c): * i2c_probe: - Test if a chip answers for a given i2c address
+Sh_sh7734_i2c.c (drivers\i2c):int i2c_probe(u8 chip)
+Tasreg.c (board\esd\tasreg):int i2c_probe(uchar addr);
+Tasreg.c (board\esd\tasreg):		i2c_probe(addr);
+Tegra_i2c.c (drivers\i2c):	debug("i2c_probe: addr=0x%x\n", chip);
+Tpm.c (drivers\tpm):	if (i2c_probe(tpm.slave_addr) && i2c_probe(tpm.slave_addr)) {
+Tsi108_i2c.c (drivers\i2c):int i2c_probe (uchar chip)
+U8500_i2c.c (drivers\i2c):int i2c_probe(uchar chip)
+Wandboard.c (board\wandboard):			(0 == i2c_probe(dev->addr));
+---- rk_i2c_write Matches (4 in 1 files) ----
+Rk_i2c.c (drivers\i2c):static int rk_i2c_write(struct rk_i2c *i2c, uchar chip, uint reg, uint r_len, uchar *buf, uint b_len)
+Rk_i2c.c (drivers\i2c):	i2c_info("rk_i2c_write: chip = %d, reg = %d, r_len = %d, b_len = %d\n", chip, reg, r_len, b_len);
+Rk_i2c.c (drivers\i2c):	return rk_i2c_write(i2c, chip, addr, alen, buf, len);
+Rk_i2c.c (drivers\i2c):	return rk_i2c_write(i2c, chip, 0, 0, NULL, 0);
+---- rk808_i2c_probe Matches (2 in 1 files) ----
+Pmic_rk808.c (drivers\power\pmic):static int rk808_i2c_probe(u32 bus, u32 addr)
+Pmic_rk808.c (drivers\power\pmic):	ret = rk808_i2c_probe(bus, addr);
+---- cls Matches (10 in 2 files) ----
+Lcd.c (common):	cls,	1,	1,	do_lcd_clear,
+Sata_sil3114.c (drivers\block):	u8 cls = 0;
+Sata_sil3114.c (drivers\block):	cls = sil_get_device_cache_line (devno);
+Sata_sil3114.c (drivers\block):	if (cls) {
+Sata_sil3114.c (drivers\block):		cls >>= 3;
+Sata_sil3114.c (drivers\block):		cls++;		/* cls = (line_size/8)+1 */
+Sata_sil3114.c (drivers\block):		writel (cls << 8 | cls, iobase[5] + VND_FIFOCFG_CH0);
+Sata_sil3114.c (drivers\block):		writel (cls << 8 | cls, iobase[5] + VND_FIFOCFG_CH1);
+Sata_sil3114.c (drivers\block):		writel (cls << 8 | cls, iobase[5] + VND_FIFOCFG_CH2);
+Sata_sil3114.c (drivers\block):		writel (cls << 8 | cls, iobase[5] + VND_FIFOCFG_CH3);
+---- U_BOOT_CMD Matches (482 in 268 files) ----
+A3m071.c (board\a3m071):U_BOOT_CMD(
+Ar405.c (board\esd\ar405):U_BOOT_CMD(
+Ar405.c (board\esd\ar405):U_BOOT_CMD(
+Ar405.c (board\esd\ar405):U_BOOT_CMD(
+Auto_update.c (board\esd\common):U_BOOT_CMD(
+Board.c (arch\arm\cpu\armv7\omap3):U_BOOT_CMD(
+Board.c (board\siemens\common):U_BOOT_CMD(
+Board.c (board\siemens\common):U_BOOT_CMD(
+Board.c (board\siemens\common):U_BOOT_CMD(
+Board.c (board\siemens\draco):U_BOOT_CMD(
+Bsp.c (board\hymod):U_BOOT_CMD(
+Bsp.c (board\hymod):U_BOOT_CMD(
+Caddy.c (board\esd\vme8349):U_BOOT_CMD(
+Cam_enc_4xx.c (board\ait\cam_enc_4xx):U_BOOT_CMD(
+Cfb_console.c (drivers\video):U_BOOT_CMD(
+Cled.c (board\bct-brettl2):U_BOOT_CMD(cled, 2, 0, do_cled,
+Cli_hush.c (common):U_BOOT_CMD(
+Clock.c (arch\arm\cpu\armv7\mx5):U_BOOT_CMD(
+Clock.c (arch\arm\cpu\armv7\mx6):U_BOOT_CMD(
+Clock_manager.c (arch\arm\cpu\armv7\socfpga):U_BOOT_CMD(
+Cmd_acadia.c (board\amcc\acadia):U_BOOT_CMD(
+Cmd_aes.c (common):U_BOOT_CMD(
+Cmd_ambapp.c (common):U_BOOT_CMD(
+Cmd_bat.c (board\ti\sdp4430):U_BOOT_CMD(
+Cmd_bc3450.c (board\bc3450):U_BOOT_CMD (dip, 1, 1, cmd_dip,
+Cmd_bc3450.c (board\bc3450):U_BOOT_CMD (buz, 2, 1, cmd_buz,
+Cmd_bc3450.c (board\bc3450):U_BOOT_CMD (fp, 3, 1, cmd_fp,
+Cmd_bc3450.c (board\bc3450):U_BOOT_CMD (temp, 3, 1, cmd_temp,
+Cmd_bc3450.c (board\bc3450):U_BOOT_CMD (test, 2, 1, cmd_test, "unit test routines", "\n"
+Cmd_bdinfo.c (common):U_BOOT_CMD(
+Cmd_bedbug.c (common):U_BOOT_CMD (ds, 3, 1, do_bedbug_dis,
+Cmd_bedbug.c (common):U_BOOT_CMD (as, 2, 0, do_bedbug_asm,
+Cmd_bedbug.c (common):U_BOOT_CMD (break, 3, 0, do_bedbug_break,
+Cmd_bedbug.c (common):U_BOOT_CMD (continue, 1, 0, do_bedbug_continue,
+Cmd_bedbug.c (common):U_BOOT_CMD (step, 1, 1, do_bedbug_step,
+Cmd_bedbug.c (common):U_BOOT_CMD (next, 1, 1, do_bedbug_next,
+Cmd_bedbug.c (common):U_BOOT_CMD (where, 1, 1, do_bedbug_stack,
+Cmd_bedbug.c (common):U_BOOT_CMD (rdump, 1, 1, do_bedbug_rdump,
+Cmd_bmode.c (arch\arm\imx-common):U_BOOT_CMD(
+Cmd_bmp.c (common):U_BOOT_CMD(
+Cmd_boot.c (common):U_BOOT_CMD(
+Cmd_boot.c (common):U_BOOT_CMD(
+Cmd_bootldr.c (common):U_BOOT_CMD(
+Cmd_bootm.c (common):U_BOOT_CMD(
+Cmd_bootm.c (common):U_BOOT_CMD(
+Cmd_bootm.c (common):U_BOOT_CMD(
+Cmd_bootm.c (common):U_BOOT_CMD(
+Cmd_bootm.c (common):U_BOOT_CMD(
+Cmd_bootm.c (common):U_BOOT_CMD(
+Cmd_bootm.c (common):U_BOOT_CMD(
+Cmd_bootmenu.c (common):U_BOOT_CMD(
+Cmd_bootrk.c (common):U_BOOT_CMD(
+Cmd_bootstage.c (common):U_BOOT_CMD(bootstage, 4, 1, do_boostage,
+Cmd_cache.c (common):U_BOOT_CMD(
+Cmd_cache.c (common):U_BOOT_CMD(
+Cmd_cache_dump.c (arch\blackfin\lib):U_BOOT_CMD(icache_dump, 4, 0, do_icache_dump,
+Cmd_cache_dump.c (arch\blackfin\lib):U_BOOT_CMD(dcache_dump, 4, 0, do_dcache_dump,
+Cmd_cbfs.c (common):U_BOOT_CMD(
+Cmd_cbfs.c (common):U_BOOT_CMD(
+Cmd_cbfs.c (common):U_BOOT_CMD(
+Cmd_cbfs.c (common):U_BOOT_CMD(
+Cmd_charge.c (common):U_BOOT_CMD(
+Cmd_chip_config.c (arch\powerpc\cpu\ppc4xx):U_BOOT_CMD(
+Cmd_clk.c (common):U_BOOT_CMD(clk, 2, 1, do_clk, "CLK sub-system", clk_help_text);
+Cmd_clock.c (arch\arm\cpu\armv7\keystone):U_BOOT_CMD(
+Cmd_clock.c (arch\arm\cpu\armv7\keystone):U_BOOT_CMD(
+Cmd_clock.c (arch\arm\cpu\armv7\keystone):U_BOOT_CMD(
+Cmd_clock.c (arch\arm\cpu\armv7\keystone):U_BOOT_CMD(
+Cmd_cm5200.c (board\cm5200):U_BOOT_CMD(
+Cmd_console.c (common):U_BOOT_CMD(
+Cmd_cplbinfo.c (common):U_BOOT_CMD(
+Cmd_cramfs.c (common):U_BOOT_CMD(
+Cmd_cramfs.c (common):U_BOOT_CMD(
+Cmd_dataflash_mmc_mux.c (common):U_BOOT_CMD(
+Cmd_date.c (common):U_BOOT_CMD(
+Cmd_dcr.c (common):U_BOOT_CMD(
+Cmd_dcr.c (common):U_BOOT_CMD(
+Cmd_dcr.c (common):U_BOOT_CMD(
+Cmd_dcr.c (common):U_BOOT_CMD(
+Cmd_demo.c (common):U_BOOT_CMD(
+Cmd_dfu.c (common):U_BOOT_CMD(dfu, CONFIG_SYS_MAXARGS, 1, do_dfu,
+Cmd_diag.c (common):U_BOOT_CMD(
+Cmd_disp.c (board\intercontrol\digsy_mtc):U_BOOT_CMD(disp, 2, 1, cmd_disp,
+Cmd_display.c (common):U_BOOT_CMD(
+Cmd_dm.c (test\dm):U_BOOT_CMD(
+Cmd_dtt.c (common):U_BOOT_CMD(
+Cmd_ecctest.c (arch\powerpc\cpu\ppc4xx):U_BOOT_CMD(
+Cmd_echo.c (common):U_BOOT_CMD(
+Cmd_eeprom.c (common):U_BOOT_CMD(
+Cmd_eeprom.c (common):U_BOOT_CMD(
+Cmd_elf.c (common):U_BOOT_CMD(
+Cmd_elf.c (common):U_BOOT_CMD(
+Cmd_enterrcm.c (arch\arm\cpu\armv7\tegra-common):U_BOOT_CMD(
+Cmd_errata.c (arch\powerpc\cpu\mpc85xx):U_BOOT_CMD(
+Cmd_exit.c (common):U_BOOT_CMD(
+Cmd_ext2.c (common):U_BOOT_CMD(
+Cmd_ext2.c (common):U_BOOT_CMD(
+Cmd_ext4.c (common):U_BOOT_CMD(ext4write, 6, 1, do_ext4_write,
+Cmd_ext4.c (common):U_BOOT_CMD(
+Cmd_ext4.c (common):U_BOOT_CMD(ext4ls, 4, 1, do_ext4_ls,
+Cmd_ext4.c (common):U_BOOT_CMD(ext4load, 6, 0, do_ext4_load,
+Cmd_fastboot.c (common):U_BOOT_CMD(fastboot, 1,	1, do_fastboot,
+Cmd_fat.c (common):U_BOOT_CMD(
+Cmd_fat.c (common):U_BOOT_CMD(
+Cmd_fat.c (common):U_BOOT_CMD(
+Cmd_fat.c (common):U_BOOT_CMD(
+Cmd_fat.c (common):U_BOOT_CMD(
+Cmd_fdc.c (common):U_BOOT_CMD(
+Cmd_fdt.c (common):U_BOOT_CMD(
+Cmd_fitupd.c (common):U_BOOT_CMD(fitupd, 2, 0, do_fitupd,
+Cmd_flash.c (common):U_BOOT_CMD(
+Cmd_flash.c (common):U_BOOT_CMD(
+Cmd_flash.c (common):U_BOOT_CMD(
+Cmd_fpga.c (common):U_BOOT_CMD(fpga, 9, 1, do_fpga,
+Cmd_fpga.c (common):U_BOOT_CMD(fpga, 6, 1, do_fpga,
+Cmd_fpgad.c (common):U_BOOT_CMD(
+Cmd_fs.c (common):U_BOOT_CMD(
+Cmd_fs.c (common):U_BOOT_CMD(
+Cmd_fs.c (common):U_BOOT_CMD(
+Cmd_fuse.c (common):U_BOOT_CMD(
+Cmd_gettime.c (common):U_BOOT_CMD(
+Cmd_gpio.c (common):U_BOOT_CMD(gpio, 4, 0, do_gpio,
+Cmd_gpt.c (common):U_BOOT_CMD(gpt, CONFIG_SYS_MAXARGS, 1, do_gpt,
+Cmd_hash.c (common):U_BOOT_CMD(
+Cmd_hdmidet.c (arch\arm\imx-common):U_BOOT_CMD(hdmidet, 1, 1, do_hdmidet,
+Cmd_help.c (common):U_BOOT_CMD(
+Cmd_help.c (common):/* This does not use the U_BOOT_CMD macro as ? can't be used in symbol names */
+Cmd_i2c.c (common):U_BOOT_CMD(
+Cmd_ide.c (common):U_BOOT_CMD(ide, 5, 1, do_ide,
+Cmd_ide.c (common):U_BOOT_CMD(diskboot, 3, 1, do_diskboot,
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_immap.c (common):U_BOOT_CMD(
+Cmd_ini.c (common):U_BOOT_CMD(
+Cmd_io.c (common):U_BOOT_CMD(iod, 2, 0, do_io_iod,
+Cmd_io.c (common):U_BOOT_CMD(iow, 3, 0, do_io_iow,
+Cmd_iotrace.c (common):U_BOOT_CMD(
+Cmd_irq.c (common):U_BOOT_CMD(
+Cmd_irq.c (common):U_BOOT_CMD(
+Cmd_itest.c (common):U_BOOT_CMD(
+Cmd_jffs2.c (common):U_BOOT_CMD(
+Cmd_jffs2.c (common):U_BOOT_CMD(
+Cmd_jffs2.c (common):U_BOOT_CMD(
+Cmd_ldrinfo.c (common):U_BOOT_CMD(
+Cmd_led.c (common):U_BOOT_CMD(
+Cmd_license.c (common):U_BOOT_CMD(
+Cmd_load.c (common):U_BOOT_CMD(
+Cmd_load.c (common):U_BOOT_CMD(
+Cmd_load.c (common):U_BOOT_CMD(
+Cmd_load.c (common):U_BOOT_CMD(
+Cmd_load.c (common):U_BOOT_CMD(
+Cmd_load.c (common):U_BOOT_CMD(
+Cmd_load.c (common):U_BOOT_CMD(
+Cmd_load.c (common):U_BOOT_CMD(
+Cmd_loadpci.c (board\esd\common):U_BOOT_CMD(
+Cmd_log.c (common):U_BOOT_CMD(
+Cmd_lzmadec.c (common):U_BOOT_CMD(
+Cmd_mac.c (common):U_BOOT_CMD(
+Cmd_md5sum.c (common):U_BOOT_CMD(
+Cmd_md5sum.c (common):U_BOOT_CMD(
+Cmd_mdio.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mem.c (common):U_BOOT_CMD(
+Cmd_mfsl.c (common):U_BOOT_CMD (frd, 3, 1, do_frd,
+Cmd_mfsl.c (common):U_BOOT_CMD (fwr, 4, 1, do_fwr,
+Cmd_mfsl.c (common):U_BOOT_CMD (rspr, 3, 1, do_rspr,
+Cmd_mii.c (common):U_BOOT_CMD(
+Cmd_mip405.c (board\mpl\mip405):U_BOOT_CMD(
+Cmd_misc.c (common):U_BOOT_CMD(
+Cmd_misc.c (common):U_BOOT_CMD(
+Cmd_mmc.c (common):U_BOOT_CMD(
+Cmd_mmc.c (common):U_BOOT_CMD(
+Cmd_mmc.c (common):U_BOOT_CMD(
+Cmd_mmc_spi.c (common):U_BOOT_CMD(
+Cmd_mon.c (arch\arm\cpu\armv7\keystone):U_BOOT_CMD(mon_install, 2, 0, do_mon_install,
+Cmd_mon.c (arch\arm\cpu\armv7\keystone):U_BOOT_CMD(mon_power, 3, 0, do_mon_power,
+Cmd_mp.c (common):U_BOOT_CMD(
+Cmd_mtc.c (board\intercontrol\digsy_mtc):U_BOOT_CMD(mtc, 5, 1, cmd_mtc,
+Cmd_mtdparts.c (common):U_BOOT_CMD(
+Cmd_mtdparts.c (common):U_BOOT_CMD(
+Cmd_nand.c (common):U_BOOT_CMD(
+Cmd_nand.c (common):U_BOOT_CMD(nboot, 4, 1, do_nandboot,
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_net.c (common):U_BOOT_CMD(
+Cmd_nvedit.c (common):U_BOOT_CMD(
+Cmd_nvedit.c (common):U_BOOT_CMD(
+Cmd_nvedit.c (common):U_BOOT_CMD(
+Cmd_ocrtc.c (board\esd\ocrtc):U_BOOT_CMD(
+Cmd_ocrtc.c (board\esd\ocrtc):U_BOOT_CMD(
+Cmd_onenand.c (common):U_BOOT_CMD(
+Cmd_otp.c (common):U_BOOT_CMD(
+Cmd_part.c (common):U_BOOT_CMD(
+Cmd_pati.c (board\mpl\pati):U_BOOT_CMD(
+Cmd_pci.c (common):U_BOOT_CMD(
+Cmd_pci405.c (board\esd\pci405):U_BOOT_CMD(
+Cmd_pcmcia.c (common):U_BOOT_CMD(
+Cmd_pinmon.c (arch\arm\cpu\armv7\uniphier):U_BOOT_CMD(
+Cmd_pip405.c (board\mpl\pip405):U_BOOT_CMD(
+Cmd_pll.c (board\amcc\makalu):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(
+Cmd_pmc440.c (board\esd\pmc440):U_BOOT_CMD(eepwren, 2, 0, do_eep_wren,
+Cmd_portio.c (common):U_BOOT_CMD(
+Cmd_portio.c (common):U_BOOT_CMD(
+Cmd_pxe.c (common):U_BOOT_CMD(
+Cmd_pxe.c (common):U_BOOT_CMD(
+Cmd_read.c (common):U_BOOT_CMD(
+Cmd_reginfo.c (common):U_BOOT_CMD(
+Cmd_reiser.c (common):U_BOOT_CMD(
+Cmd_reiser.c (common):U_BOOT_CMD(
+Cmd_rockusb.c (common):U_BOOT_CMD(rockusb, CONFIG_SYS_MAXARGS, 1, do_rockusb,
+Cmd_sandbox.c (common):U_BOOT_CMD(
+Cmd_sata.c (common):U_BOOT_CMD(
+Cmd_scsi.c (common):U_BOOT_CMD(
+Cmd_scsi.c (common):U_BOOT_CMD(
+Cmd_setexpr.c (common):U_BOOT_CMD(
+Cmd_sf.c (common):U_BOOT_CMD(
+Cmd_sha1sum.c (common):U_BOOT_CMD(
+Cmd_sha1sum.c (common):U_BOOT_CMD(
+Cmd_softswitch.c (common):U_BOOT_CMD(
+Cmd_sound.c (common):U_BOOT_CMD(
+Cmd_source.c (common):U_BOOT_CMD(
+Cmd_spi.c (common):U_BOOT_CMD(
+Cmd_spibootldr.c (common):U_BOOT_CMD(
+Cmd_spl.c (common):U_BOOT_CMD(
+Cmd_stk52xx.c (board\tqc\tqm5200):U_BOOT_CMD(
+Cmd_stk52xx.c (board\tqc\tqm5200):U_BOOT_CMD(
+Cmd_stk52xx.c (board\tqc\tqm5200):U_BOOT_CMD(
+Cmd_stk52xx.c (board\tqc\tqm5200):U_BOOT_CMD(
+Cmd_stk52xx.c (board\tqc\tqm5200):U_BOOT_CMD(
+Cmd_strings.c (common):U_BOOT_CMD(
+Cmd_tb5200.c (board\tqc\tqm5200):U_BOOT_CMD(
+Cmd_tb5200.c (board\tqc\tqm5200):U_BOOT_CMD(
+Cmd_terminal.c (common):U_BOOT_CMD(
+Cmd_test.c (common): * and undef true and false before U_BOOT_CMD. This define and comment
+Cmd_test.c (common): * shall be removed if change to U_BOOT_CMD is made to take string
+Cmd_test.c (common):U_BOOT_CMD(
+Cmd_test.c (common):U_BOOT_CMD(
+Cmd_test.c (common):U_BOOT_CMD(
+Cmd_thordown.c (common):U_BOOT_CMD(thordown, CONFIG_SYS_MAXARGS, 1, do_thor_down,
+Cmd_time.c (common):U_BOOT_CMD(time, CONFIG_SYS_MAXARGS, 0, do_time,
+Cmd_tpm.c (common):U_BOOT_CMD(tpm, CONFIG_SYS_MAXARGS, 1, do_tpm,
+Cmd_trace.c (common):U_BOOT_CMD(
+Cmd_tsi148.c (common):U_BOOT_CMD(
+Cmd_ubi.c (common):U_BOOT_CMD(
+Cmd_ubifs.c (common):U_BOOT_CMD(
+Cmd_ubifs.c (common):U_BOOT_CMD(
+Cmd_ubifs.c (common):U_BOOT_CMD(
+Cmd_ubifs.c (common):U_BOOT_CMD(
+Cmd_universe.c (common):U_BOOT_CMD(
+Cmd_unzip.c (common):U_BOOT_CMD(
+Cmd_usb.c (common):U_BOOT_CMD(
+Cmd_usb.c (common):U_BOOT_CMD(
+Cmd_usb_mass_storage.c (common):U_BOOT_CMD(ums, 4, 1, do_usb_mass_storage,
+Cmd_vcma9.c (board\mpl\vcma9):U_BOOT_CMD(
+Cmd_version.c (common):U_BOOT_CMD(
+Cmd_vpd.c (board\w7o):U_BOOT_CMD(
+Cmd_ximg.c (common):U_BOOT_CMD(
+Cmd_yaffs2.c (common):U_BOOT_CMD(ytrace, 2, 0, do_ytrace,
+Cmd_yaffs2.c (common):U_BOOT_CMD(ydevls, 1, 0, do_ydevls,
+Cmd_yaffs2.c (common):U_BOOT_CMD(ydevconfig, 5, 0, do_ydevconfig,
+Cmd_yaffs2.c (common):U_BOOT_CMD(ymount, 2, 0, do_ymount,
+Cmd_yaffs2.c (common):U_BOOT_CMD(yumount, 2, 0, do_yumount,
+Cmd_yaffs2.c (common):U_BOOT_CMD(yls, 3, 0, do_yls, "yaffs ls", "yls [-l] dirname");
+Cmd_yaffs2.c (common):U_BOOT_CMD(yrd, 2, 0, do_yrd,
+Cmd_yaffs2.c (common):U_BOOT_CMD(ywr, 4, 0, do_ywr,
+Cmd_yaffs2.c (common):U_BOOT_CMD(yrdm, 3, 0, do_yrdm,
+Cmd_yaffs2.c (common):U_BOOT_CMD(ywrm, 4, 0, do_ywrm,
+Cmd_yaffs2.c (common):U_BOOT_CMD(ymkdir, 2, 0, do_ymkdir,
+Cmd_yaffs2.c (common):U_BOOT_CMD(yrmdir, 2, 0, do_yrmdir,
+Cmd_yaffs2.c (common):U_BOOT_CMD(yrm, 2, 0, do_yrm, "YAFFS rm", "yrm path   removes a yaffs file");
+Cmd_yaffs2.c (common):U_BOOT_CMD(ymv, 4, 0, do_ymv,
+Cmd_yucca.c (board\amcc\yucca):U_BOOT_CMD(
+Cmd_zfs.c (common):U_BOOT_CMD(zfsls, 4, 1, do_zfs_ls,
+Cmd_zfs.c (common):U_BOOT_CMD(zfsload, 6, 0, do_zfs_load,
+Cmd_zip.c (common):U_BOOT_CMD(
+Cms700.c (board\esd\cms700):U_BOOT_CMD(eepwren,	2,	0,	do_eep_wren,
+Command.h (include):#define U_BOOT_CMD(_name, _maxargs, _rep, _cmd, _usage, _help)		\
+Command_ut.c (test):U_BOOT_CMD(
+Common.c (board\keymile\common):U_BOOT_CMD(km_setboardid, 1, 0, do_setboardid, "setboardid", "read out bid and "
+Common.c (board\keymile\common):U_BOOT_CMD(km_checkbidhwk, 2, 0, do_checkboardidhwk,
+Common.c (board\keymile\common):U_BOOT_CMD(km_checktestboot, 2, 0, do_checktestboot,
+Compression.c (test):U_BOOT_CMD(
+Cpci2dp.c (board\esd\cpci2dp):U_BOOT_CMD(
+Cpci405.c (board\esd\cpci405):U_BOOT_CMD(
+Cpci405.c (board\esd\cpci405):U_BOOT_CMD(
+Cpci405.c (board\esd\cpci405):U_BOOT_CMD(
+Cpci5200.c (board\esd\cpci5200):U_BOOT_CMD(writepci, 3, 1, do_writepci,
+Cpci750.c (board\esd\cpci750):U_BOOT_CMD(
+Cpci750.c (board\esd\cpci750):U_BOOT_CMD(
+Cpci750.c (board\esd\cpci750):U_BOOT_CMD(
+Cpld.c (board\freescale\c29xpcie):U_BOOT_CMD(
+Cpld.c (board\freescale\p2041rdb):U_BOOT_CMD(
+Cpld.c (board\freescale\t104xrdb):U_BOOT_CMD(
+Cpld.c (board\freescale\t208xrdb):U_BOOT_CMD(
+Cpux9k2.c (board\bus\eb_cpux9k2):U_BOOT_CMD(
+Cros_ec.c (drivers\misc):U_BOOT_CMD(
+Demo.c (board\rockchip\rk32xx):U_BOOT_CMD(
+Demo.c (board\rockchip\rk33xx):U_BOOT_CMD(
+Ds4510.c (drivers\misc):U_BOOT_CMD(
+Du440.c (board\esd\du440):U_BOOT_CMD(
+Du440.c (board\esd\du440):U_BOOT_CMD(
+Du440.c (board\esd\du440):U_BOOT_CMD(
+Du440.c (board\esd\du440):U_BOOT_CMD(eepwren, 2, 0, do_eep_wren,
+Du440.c (board\esd\du440):U_BOOT_CMD(
+Du440.c (board\esd\du440):U_BOOT_CMD(
+Du440.c (board\esd\du440):U_BOOT_CMD(
+Du440.c (board\esd\du440):U_BOOT_CMD(
+E1000.c (drivers\net):U_BOOT_CMD(
+Eb_cpu5282.c (board\bus\eb_cpu5282):U_BOOT_CMD(
+Ecc.c (arch\powerpc\cpu\mpc83xx):U_BOOT_CMD(ecc, 4, 0, do_ecc,
+Eeprom.c (board\gateworks\gw_ventana):U_BOOT_CMD(
+Eeprom.c (board\trizepsiv):U_BOOT_CMD(
+Enbw_cmc.c (board\enbw\enbw_cmc):U_BOOT_CMD(switch, 3, 1, do_switch,
+Enbw_cmc.c (board\enbw\enbw_cmc):U_BOOT_CMD(led, 3, 1, do_led,
+Ethernut5_pwrman.c (board\egnite\ethernut5):U_BOOT_CMD(
+Fdtdec_test.c (lib):U_BOOT_CMD(
+G2000.c (board\g2000):U_BOOT_CMD(
+G2000.c (board\g2000):U_BOOT_CMD(
+G2000.c (board\g2000):U_BOOT_CMD(
+Generic.c (arch\arm\cpu\arm1136\mx35):U_BOOT_CMD(
+Generic.c (arch\arm\cpu\armv7\vf610):U_BOOT_CMD(
+Gsc.c (board\gateworks\gw_ventana):U_BOOT_CMD(gsc, 1, 1, do_gsc,
+Hab.c (arch\arm\cpu\armv7\mx6):U_BOOT_CMD(
+Hab.c (arch\arm\cpu\armv7\mx6):U_BOOT_CMD(
+Hh405.c (board\esd\hh405):U_BOOT_CMD(eepwren,	2,	0,	do_eep_wren,
+Hww1u1a.c (board\exmeritus\hww1u1a):U_BOOT_CMD(
+Inkadiag.c (board\inka4x0):U_BOOT_CMD(inkadiag, 6, 1, do_inkadiag,
+Io_tool.c (board\rockchip\rk32xx):U_BOOT_CMD(io, CONFIG_SYS_MAXARGS, 1,	do_io_tool,
+Io_tool.c (board\rockchip\rk33xx):U_BOOT_CMD(io, CONFIG_SYS_MAXARGS, 1,	do_io_tool,
+Kbd.c (board\lwmon5):U_BOOT_CMD(
+Keystone.c (arch\arm\cpu\armv7\keystone):U_BOOT_CMD(
+Kgdb.c (common):U_BOOT_CMD(
+Lcd.c (board\amcc\taihu):U_BOOT_CMD(
+Lcd.c (board\amcc\taihu):U_BOOT_CMD(
+Lcd.c (board\amcc\taihu):U_BOOT_CMD(
+Lcd.c (board\amcc\taihu):U_BOOT_CMD(
+Lcd.c (board\amcc\taishan):U_BOOT_CMD(lcd_test, 1, 1, do_lcd_test, "lcd test display", "");
+Lcd.c (board\amcc\taishan):U_BOOT_CMD(lcd_cls, 1, 1, do_lcd_clear, "lcd clear display", "");
+Lcd.c (board\amcc\taishan):U_BOOT_CMD(lcd_puts, 2, 1, do_lcd_puts,
+Lcd.c (board\amcc\taishan):U_BOOT_CMD(lcd_putc, 2, 1, do_lcd_putc,
+Lcd.c (board\amcc\taishan):U_BOOT_CMD(lcd_cur, 3, 1, do_lcd_cur,
+Lcd.c (board\amcc\taishan):U_BOOT_CMD(ledon, 1, 1, do_led_test_on,
+Lcd.c (board\amcc\taishan):U_BOOT_CMD(ledoff, 1, 1, do_led_test_off,
+Lcd.c (board\esd\common):U_BOOT_CMD(
+Lcd.c (common):U_BOOT_CMD(
+Ls1021atwr.c (board\freescale\ls1021atwr):U_BOOT_CMD(
+Ls1021atwr.c (board\freescale\ls1021atwr):U_BOOT_CMD(
+Ls1021atwr.c (board\freescale\ls1021atwr):U_BOOT_CMD(
+Luan.c (board\amcc\luan):U_BOOT_CMD(
+Lwmon.c (board\lwmon):U_BOOT_CMD(
+Lwmon.c (board\lwmon):U_BOOT_CMD(
+Lwmon.c (board\lwmon):U_BOOT_CMD(
+Lwmon5.c (board\lwmon5):U_BOOT_CMD(
+Micro.c (board\esd\common\xilinx_jtag):U_BOOT_CMD(
+Misc.c (arch\arm\cpu\armv7\socfpga):U_BOOT_CMD(
+Mv88e61xx.c (drivers\net\phy):U_BOOT_CMD(mv88e61xx, 8, 0, do_switch,
+Mv88e6352.c (drivers\net\phy):U_BOOT_CMD(
+Mxs.c (arch\arm\cpu\arm926ejs\mxs):U_BOOT_CMD(
+Net2big_v2.c (board\lacie\net2big_v2):U_BOOT_CMD(button, 1, 1, do_read_push_button,
+Netspace_v2.c (board\lacie\netspace_v2):U_BOOT_CMD(button, 1, 1, do_read_button,
+Ngpixis.c (board\freescale\common):U_BOOT_CMD(
+Nitrogen6x.c (board\boundary\nitrogen6x):U_BOOT_CMD(
+Osd.c (board\gdsys\common):U_BOOT_CMD(
+Osd.c (board\gdsys\common):U_BOOT_CMD(
+P1010rdb.c (board\freescale\p1010rdb):U_BOOT_CMD(
+Pca953x.c (drivers\gpio):U_BOOT_CMD(
+Pci405.c (board\esd\pci405):U_BOOT_CMD(
+Pcs440ep.c (board\pcs440ep):U_BOOT_CMD(
+Pcs440ep.c (board\pcs440ep):U_BOOT_CMD(
+Pdm360ng.c (board\pdm360ng):U_BOOT_CMD(lcdbr, 2, 1, cmd_lcd_brightness,
+Pf5200.c (board\esd\pf5200):U_BOOT_CMD(poweroff, 1, 1, do_poweroff, "Switch off power", "");
+Pf5200.c (board\esd\pf5200):U_BOOT_CMD(phypower, 2, 2, do_phypower,
+Pf5200.c (board\esd\pf5200):U_BOOT_CMD(writepci, 3, 1, do_writepci,
+Pixis.c (board\freescale\common):U_BOOT_CMD(
+Pixis.c (board\freescale\common):U_BOOT_CMD(
+Pixis.c (board\freescale\common):U_BOOT_CMD(
+Plu405.c (board\esd\plu405):U_BOOT_CMD(eepwren,	2,	0,	do_eep_wren,
+Pmc405de.c (board\esd\pmc405de):U_BOOT_CMD(eepwren, 2, 0, do_eep_wren,
+Pmc405de.c (board\esd\pmc405de):U_BOOT_CMD(
+Pmc405de.c (board\esd\pmc405de):U_BOOT_CMD(
+Pmc405de.c (board\esd\pmc405de):U_BOOT_CMD(
+Power_core.c (drivers\power):U_BOOT_CMD(
+Pxa_idp.c (board\pxa255_idp):U_BOOT_CMD(idpcmd, CONFIG_SYS_MAXARGS, 0, do_idpcmd,
+Qe.c (drivers\qe):U_BOOT_CMD(
+Qixis.c (board\freescale\common):U_BOOT_CMD(
+R360mpi.c (board\r360mpi):U_BOOT_CMD(
+Rtl8169_mac.c (board\renesas\sh7785lcr):U_BOOT_CMD(
+Rtl8169_mac.c (board\renesas\sh7785lcr):U_BOOT_CMD(
+Sdram_init.c (board\esd\cpci750):U_BOOT_CMD(
+Selfcheck.c (board\renesas\sh7785lcr):U_BOOT_CMD(
+Sh7752evb.c (board\renesas\sh7752evb):U_BOOT_CMD(
+Sh7753evb.c (board\renesas\sh7753evb):U_BOOT_CMD(
+Sh7757lcr.c (board\renesas\sh7757lcr):U_BOOT_CMD(
+Sh7757lcr.c (board\renesas\sh7757lcr):U_BOOT_CMD(
+Sh7785lcr.c (board\renesas\sh7785lcr):U_BOOT_CMD(
+Showinfo.c (board\amcc\taishan):U_BOOT_CMD(xbriinfo, 1, 1, do_show_xbridge_info,
+Showinfo.c (board\amcc\taishan):U_BOOT_CMD(xdevinfo, 1, 1, do_show_pcix_device_info,
+Showinfo.c (board\amcc\taishan):U_BOOT_CMD(resetinfo, 1, 1, do_show_reset_reg_info,
+Smc_eeprom.c (board\micronas\vct):U_BOOT_CMD(smcee, 1, 0, do_eeprom_erase_all,
+Smc_eeprom.c (board\micronas\vct):U_BOOT_CMD(smced, 1, 0, do_eeprom_dump,
+Smc_eeprom.c (board\micronas\vct):U_BOOT_CMD(smcew, 2, 0, do_eeprom_save_mac,
+Speed.c (arch\powerpc\cpu\mpc512x):U_BOOT_CMD(clocks, 1, 0, do_clocks,
+Speed.c (arch\powerpc\cpu\mpc83xx):U_BOOT_CMD(clocks, 1, 0, do_clocks,
+Spr_misc.c (board\spear\common):U_BOOT_CMD(chip_config, 3, 1, do_chip_config,
+Sx151x.c (drivers\gpio):U_BOOT_CMD(
+Sysid.c (arch\nios2\cpu):U_BOOT_CMD(
+T4240qds.c (board\freescale\t4qds):U_BOOT_CMD(
+Taihu.c (board\amcc\taihu):U_BOOT_CMD (
+Taihu.c (board\amcc\taihu):U_BOOT_CMD (
+Tasreg.c (board\esd\tasreg):U_BOOT_CMD(
+Tasreg.c (board\esd\tasreg):U_BOOT_CMD(
+Tasreg.c (board\esd\tasreg):U_BOOT_CMD(
+Tasreg.c (board\esd\tasreg):U_BOOT_CMD(
+Tasreg.c (board\esd\tasreg):U_BOOT_CMD(
+Tasreg.c (board\esd\tasreg):U_BOOT_CMD(
+Tca642x.c (drivers\gpio):U_BOOT_CMD(
+Tqm8272.c (board\tqc\tqm8272):U_BOOT_CMD(
+Tricorder-eeprom.c (board\corscience\tricorder):U_BOOT_CMD(
+U8500_href.c (board\st-ericsson\u8500):U_BOOT_CMD(
+Update.c (board\amcc\taihu):U_BOOT_CMD (
+Update.c (board\amcc\taishan):U_BOOT_CMD(update_boot_eeprom, 1, 1, do_update_boot_eeprom,
+Update.c (board\zeus):U_BOOT_CMD (
+Uuid.c (lib):U_BOOT_CMD(uuid, CONFIG_SYS_MAXARGS, 1, do_uuid,
+Uuid.c (lib):U_BOOT_CMD(guid, CONFIG_SYS_MAXARGS, 1, do_uuid,
+Vision2.c (board\ttcontrol\vision2):U_BOOT_CMD(
+Vl_ma2sc.c (board\bus\vl_ma2sc):U_BOOT_CMD(
+Vl_ma2sc.c (board\bus\vl_ma2sc):U_BOOT_CMD(
+Vl_ma2sc.c (board\bus\vl_ma2sc):U_BOOT_CMD(
+Vl_ma2sc.c (board\bus\vl_ma2sc):U_BOOT_CMD(
+Voh405.c (board\esd\voh405):U_BOOT_CMD(eepwren,	2,	0,	do_eep_wren,
+Wireless_space.c (board\lacie\wireless_space):U_BOOT_CMD(ws, 3, 0, do_ws,
+Zeus.c (board\zeus):U_BOOT_CMD(
+Zeus.c (board\zeus):U_BOOT_CMD (
+Zimage.c (arch\x86\lib):U_BOOT_CMD(
+Zimageboot.c (arch\sh\lib):U_BOOT_CMD(
+Zuma_pbb.c (board\evb64260):U_BOOT_CMD(
+Zuma_pbb.c (board\evb64260):U_BOOT_CMD(
+Zuma_pbb.c (board\evb64260):U_BOOT_CMD(
+---- dw_mipi_dsi_read Matches (0 in 0 files) ----
+---- MIPI_DSI_DCS_READ Matches (3 in 3 files) ----
+Exynos_mipi_dsi_common.c (drivers\video):	case MIPI_DSI_DCS_READ:
+Mipi_dsim.h (arch\arm\include\asm\arch-exynos):	MIPI_DSI_DCS_READ				= 0x06,
+Rockchip_mipi_dsi.h (drivers\video):	MIPI_DSI_DCS_READ				= 0x06,
+---- read_dcs_packet Matches (0 in 0 files) ----
+---- dw_mipi_dsi_gen_pkt_hdr_write Matches (3 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):static int dw_mipi_dsi_gen_pkt_hdr_write(struct dw_mipi_dsi *dsi, u32 val)
+Rockchip-dw-mipi-dsi.c (drivers\video):	return dw_mipi_dsi_gen_pkt_hdr_write(dsi, val);
+Rockchip-dw-mipi-dsi.c (drivers\video):	return dw_mipi_dsi_gen_pkt_hdr_write(dsi, val);
+---- dcs_packet Matches (0 in 0 files) ----
+---- dsi_read Matches (4 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):static inline u32 dsi_read(struct dw_mipi_dsi *dsi, u32 reg)
+Rockchip-dw-mipi-dsi.c (drivers\video):	dsi_read(dsi, DSI_INT_ST0);
+Rockchip-dw-mipi-dsi.c (drivers\video):	dsi_read(dsi, DSI_INT_ST1);
+Rockchip-dw-mipi-dsi.c (drivers\video):		printf("%08x ", dsi_read(dsi, i));
+---- DSI_GEN_PLD_DATA Matches (3 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):#define DSI_GEN_PLD_DATA		0x70
+Rockchip-dw-mipi-dsi.c (drivers\video):			dsi_write(dsi, DSI_GEN_PLD_DATA, remainder);
+Rockchip-dw-mipi-dsi.c (drivers\video):			dsi_write(dsi, DSI_GEN_PLD_DATA, *tx_buf);
+---- read_dcs_packet Matches (0 in 0 files) ----
+---- max_rd_pkt_size Matches (2 in 2 files) ----
+Rk32_mipi_dsi.c (drivers\video\transmitter):	//  rk32_dsi_set_bits(dsi, regs[0], max_rd_pkt_size);
+Rk32_mipi_dsi.h (drivers\video\transmitter):#define max_rd_pkt_size 			DSI_HOST_BITS(0x068, 1, 24)
+---- DSI_GEN_PLD_DATA Matches (3 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):#define DSI_GEN_PLD_DATA		0x70
+Rockchip-dw-mipi-dsi.c (drivers\video):			dsi_write(dsi, DSI_GEN_PLD_DATA, remainder);
+Rockchip-dw-mipi-dsi.c (drivers\video):			dsi_write(dsi, DSI_GEN_PLD_DATA, *tx_buf);
+---- MAX_RD_PKT_SIZE_LP Matches (2 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):#define MAX_RD_PKT_SIZE_LP		BIT(24)
+Rockchip-dw-mipi-dsi.c (drivers\video):#define CMD_MODE_ALL_LP			(MAX_RD_PKT_SIZE_LP | \
+---- GEN_HDATA Matches (3 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):#define GEN_HDATA(data)			(((data) & 0xffff) << 8)
+Rockchip-dw-mipi-dsi.c (drivers\video):	u32 val = GEN_HDATA(*tx_buf) | GEN_HTYPE(msg->type);
+Rockchip-dw-mipi-dsi.c (drivers\video):	u32 val = GEN_HDATA(msg->tx_len) | GEN_HTYPE(msg->type);
+---- GEN_SW_0P_TX_LP Matches (2 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):#define GEN_SW_0P_TX_LP			BIT(8)
+Rockchip-dw-mipi-dsi.c (drivers\video):					 GEN_SW_0P_TX_LP)
+---- CMD_MODE_ALL_LP Matches (2 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):#define CMD_MODE_ALL_LP			(MAX_RD_PKT_SIZE_LP | \
+Rockchip-dw-mipi-dsi.c (drivers\video):	dsi_write(dsi, DSI_CMD_MODE_CFG, CMD_MODE_ALL_LP);
+---- rk32_mipi_dsi_read_dcs_packet Matches (3 in 1 files) ----
+Rk32_mipi_dsi.c (drivers\video\transmitter):static int rk32_mipi_dsi_read_dcs_packet(void *arg, unsigned char *data1, u32 n)
+Rk32_mipi_dsi.c (drivers\video\transmitter):	MIPI_DBG("rk32_mipi_dsi_read_dcs_packet==0x%x\n", rk32_dsi_get_bits(dsi, GEN_PLD_DATA));
+Rk32_mipi_dsi.c (drivers\video\transmitter):		ops->dsi_read_dcs_packet = rk32_mipi_dsi_read_dcs_packet,
+---- GEN_HDATA Matches (3 in 1 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):#define GEN_HDATA(data)			(((data) & 0xffff) << 8)
+Rockchip-dw-mipi-dsi.c (drivers\video):	u32 val = GEN_HDATA(*tx_buf) | GEN_HTYPE(msg->type);
+Rockchip-dw-mipi-dsi.c (drivers\video):	u32 val = GEN_HDATA(msg->tx_len) | GEN_HTYPE(msg->type);
+---- resource Matches (735 in 293 files) ----
+.asm-offsets.s.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.asm-offsets.s.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.asm-offsets.s.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.asm-offsets.s.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.autoboot.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.autoboot.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.bmp_helper.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.bmp_helper.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.board_f.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.board_f.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.board_info.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.board_info.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.board_r.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.board_r.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.bootm-fdt.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.bootm-fdt.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.bootm.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.bootm.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.bootm.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.bootm.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.bootm_os.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.bootm_os.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.built-in.o.cmd (common):cmd_common/built-in.o :=  /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.bfd     -r -o common/built-in.o common/main.o common/command.o common/exports.o common/hash.o common/cli_hush.o common/cli_simple.o common/cli.o common/cli_readline.o common/autoboot.o common/board_f.o common/board_r.o common/board_info.o common/cmd_boot.o common/cmd_bootm.o common/bootm.o common/bootm_os.o common/cmd_help.o common/cmd_version.o common/env_attr.o common/env_callback.o common/env_flags.o common/env_rk.o common/cmd_bmp.o common/cmd_exit.o common/cmd_fdt.o common/fdt_support.o common/cmd_fastboot.o common/cmd_bootrk.o common/cmd_rockusb.o common/resource.o common/flash.o common/edid.o common/splash.o common/lcd.o common/cmd_nvedit.o common/env_common.o common/console.o common/dlmalloc.o common/image.o common/image-fdt.o common/memsize.o common/stdio.o 
+.cache.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/resource/partition.h) \
+.cache.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/of/from/resource.h) \
+.cache.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.cache.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.cache_v8.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/resource/partition.h) \
+.cache_v8.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/of/from/resource.h) \
+.checksum.o.cmd (tools):    $(wildcard include/config/resource/partition.h) \
+.checksum.o.cmd (tools):    $(wildcard include/config/of/from/resource.h) \
+.chipDepend.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/resource/partition.h) \
+.chipDepend.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/of/from/resource.h) \
+.chipDepend.o.cmd (board\rockchip\common\platform):  include/resource.h \
+.cli.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cli.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cli_hush.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cli_hush.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cli_readline.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cli_readline.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cli_simple.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cli_simple.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.clock.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/resource/partition.h) \
+.clock.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/of/from/resource.h) \
+.cmd_bmp.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_bmp.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_boot.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_boot.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_bootm.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_bootm.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_bootrk.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_bootrk.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_bootrk.o.cmd (common):  include/resource.h \
+.cmd_exit.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_exit.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_fastboot.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_fastboot.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_fastboot.o.cmd (common):  include/resource.h \
+.cmd_fdt.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_fdt.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_help.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_help.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_nvedit.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_nvedit.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_rockusb.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_rockusb.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.cmd_rockusb.o.cmd (common):  include/resource.h \
+.cmd_version.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.cmd_version.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.command.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.command.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.console.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.console.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.core.o.cmd (drivers\usb\gadget):    $(wildcard include/config/resource/partition.h) \
+.core.o.cmd (drivers\usb\gadget):    $(wildcard include/config/of/from/resource.h) \
+.cpu.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/resource/partition.h) \
+.cpu.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/of/from/resource.h) \
+.cpu.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/resource/partition.h) \
+.cpu.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/of/from/resource.h) \
+.crc.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/resource/partition.h) \
+.crc.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/of/from/resource.h) \
+.crc.o.cmd (board\rockchip\common\platform):  include/resource.h \
+.crc32.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.crc32.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.crc32_rk.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.crc32_rk.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.crt0_64.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.crt0_64.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.date.o.cmd (drivers\rtc):    $(wildcard include/config/resource/partition.h) \
+.date.o.cmd (drivers\rtc):    $(wildcard include/config/of/from/resource.h) \
+.ddr.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/resource/partition.h) \
+.ddr.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/of/from/resource.h) \
+.display_options.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.display_options.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.dlmalloc.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.dlmalloc.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.dwc3_ep0.o.cmd (drivers\usb\gadget):    $(wildcard include/config/resource/partition.h) \
+.dwc3_ep0.o.cmd (drivers\usb\gadget):    $(wildcard include/config/of/from/resource.h) \
+.dwc3_rk_udc.o.cmd (drivers\usb\gadget):    $(wildcard include/config/resource/partition.h) \
+.dwc3_rk_udc.o.cmd (drivers\usb\gadget):    $(wildcard include/config/of/from/resource.h) \
+.edid.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.edid.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.efuse.o.cmd (board\rockchip\common\secureboot):    $(wildcard include/config/resource/partition.h) \
+.efuse.o.cmd (board\rockchip\common\secureboot):    $(wildcard include/config/of/from/resource.h) \
+.efuse.o.cmd (board\rockchip\common\secureboot):  include/resource.h \
+.env_attr.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.env_attr.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.env_callback.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.env_callback.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.env_common.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.env_common.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.env_flags.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.env_flags.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.env_rk.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.env_rk.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.ep0.o.cmd (drivers\usb\gadget):    $(wildcard include/config/resource/partition.h) \
+.ep0.o.cmd (drivers\usb\gadget):    $(wildcard include/config/of/from/resource.h) \
+.exceptions.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/resource/partition.h) \
+.exceptions.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/of/from/resource.h) \
+.exports.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.exports.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.fastboot.o.cmd (board\rockchip\common\rkboot):    $(wildcard include/config/resource/partition.h) \
+.fastboot.o.cmd (board\rockchip\common\rkboot):    $(wildcard include/config/of/from/resource.h) \
+.fastboot.o.cmd (board\rockchip\common\rkboot):  include/resource.h \
+.fdt.o.cmd (lib\libfdt):    $(wildcard include/config/resource/partition.h) \
+.fdt.o.cmd (lib\libfdt):    $(wildcard include/config/of/from/resource.h) \
+.fdtdec.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.fdtdec.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.fdtdec_common.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.fdtdec_common.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.fdt_addresses.o.cmd (lib\libfdt):    $(wildcard include/config/resource/partition.h) \
+.fdt_addresses.o.cmd (lib\libfdt):    $(wildcard include/config/of/from/resource.h) \
+.fdt_empty_tree.o.cmd (lib\libfdt):    $(wildcard include/config/resource/partition.h) \
+.fdt_empty_tree.o.cmd (lib\libfdt):    $(wildcard include/config/of/from/resource.h) \
+.fdt_ro.o.cmd (lib\libfdt):    $(wildcard include/config/resource/partition.h) \
+.fdt_ro.o.cmd (lib\libfdt):    $(wildcard include/config/of/from/resource.h) \
+.fdt_rw.o.cmd (lib\libfdt):    $(wildcard include/config/resource/partition.h) \
+.fdt_rw.o.cmd (lib\libfdt):    $(wildcard include/config/of/from/resource.h) \
+.fdt_strerror.o.cmd (lib\libfdt):    $(wildcard include/config/resource/partition.h) \
+.fdt_strerror.o.cmd (lib\libfdt):    $(wildcard include/config/of/from/resource.h) \
+.fdt_support.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.fdt_support.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.fdt_sw.o.cmd (lib\libfdt):    $(wildcard include/config/resource/partition.h) \
+.fdt_sw.o.cmd (lib\libfdt):    $(wildcard include/config/of/from/resource.h) \
+.fdt_wip.o.cmd (lib\libfdt):    $(wildcard include/config/resource/partition.h) \
+.fdt_wip.o.cmd (lib\libfdt):    $(wildcard include/config/of/from/resource.h) \
+.fg_ricoh619.o.cmd (drivers\power\fuel_gauge):    $(wildcard include/config/resource/partition.h) \
+.fg_ricoh619.o.cmd (drivers\power\fuel_gauge):    $(wildcard include/config/of/from/resource.h) \
+.fg_rk816.o.cmd (drivers\power\fuel_gauge):    $(wildcard include/config/resource/partition.h) \
+.fg_rk816.o.cmd (drivers\power\fuel_gauge):    $(wildcard include/config/of/from/resource.h) \
+.fg_rk818.o.cmd (drivers\power\fuel_gauge):    $(wildcard include/config/resource/partition.h) \
+.fg_rk818.o.cmd (drivers\power\fuel_gauge):    $(wildcard include/config/of/from/resource.h) \
+.flash.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.flash.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.fs.o.cmd (fs):    $(wildcard include/config/resource/partition.h) \
+.fs.o.cmd (fs):    $(wildcard include/config/of/from/resource.h) \
+.ftl_std.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/resource/partition.h) \
+.ftl_std.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/of/from/resource.h) \
+.ftl_std.o.cmd (board\rockchip\common\platform):  include/resource.h \
+.fusb302.o.cmd (drivers\power\mfd):    $(wildcard include/config/resource/partition.h) \
+.fusb302.o.cmd (drivers\power\mfd):    $(wildcard include/config/of/from/resource.h) \
+.gic_64.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.gic_64.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.hang.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.hang.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.hash.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.hash.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.hashtable.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.hashtable.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.hello_world.o.cmd (examples\standalone):    $(wildcard include/config/resource/partition.h) \
+.hello_world.o.cmd (examples\standalone):    $(wildcard include/config/of/from/resource.h) \
+.hw_MMC.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/resource/partition.h) \
+.hw_MMC.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/of/from/resource.h) \
+.hw_MMC.o.cmd (board\rockchip\common\emmc):  include/resource.h \
+.hw_SD.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/resource/partition.h) \
+.hw_SD.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/of/from/resource.h) \
+.hw_SD.o.cmd (board\rockchip\common\emmc):  include/resource.h \
+.hw_SDController.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/resource/partition.h) \
+.hw_SDController.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/of/from/resource.h) \
+.hw_SDController.o.cmd (board\rockchip\common\emmc):  include/resource.h \
+.hw_SDM.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/resource/partition.h) \
+.hw_SDM.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/of/from/resource.h) \
+.hw_SDM.o.cmd (board\rockchip\common\emmc):  include/resource.h \
+.hw_SDOsAdapt.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/resource/partition.h) \
+.hw_SDOsAdapt.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/of/from/resource.h) \
+.hw_SDOsAdapt.o.cmd (board\rockchip\common\emmc):  include/resource.h \
+.hw_SDPlatAdapt.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/resource/partition.h) \
+.hw_SDPlatAdapt.o.cmd (board\rockchip\common\emmc):    $(wildcard include/config/of/from/resource.h) \
+.hw_SDPlatAdapt.o.cmd (board\rockchip\common\emmc):  include/resource.h \
+.idblock.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/resource/partition.h) \
+.idblock.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/of/from/resource.h) \
+.idblock.o.cmd (board\rockchip\common\rkloader):  include/resource.h \
+.image-fdt.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.image-fdt.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.image.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.image.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.initcall.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.initcall.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.input.o.cmd (drivers\input):    $(wildcard include/config/resource/partition.h) \
+.input.o.cmd (drivers\input):    $(wildcard include/config/of/from/resource.h) \
+.interrupts_64.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.interrupts_64.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.iomux.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/resource/partition.h) \
+.iomux.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/of/from/resource.h) \
+.irqs.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/resource/partition.h) \
+.irqs.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/of/from/resource.h) \
+.key.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/resource/partition.h) \
+.key.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/of/from/resource.h) \
+.key.o.cmd (board\rockchip\common\rkloader):  include/resource.h \
+.lcd.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.lcd.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.lcd.o.cmd (common):  include/resource.h \
+.lcd_mipi.o.cmd (drivers\video\screen):    $(wildcard include/config/resource/partition.h) \
+.lcd_mipi.o.cmd (drivers\video\screen):    $(wildcard include/config/of/from/resource.h) \
+.linux_compat.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.linux_compat.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.linux_string.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.linux_string.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.list_sort.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.list_sort.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.lmb.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.lmb.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.loaderimage.o.cmd (tools):    $(wildcard include/config/resource/partition.h) \
+.loaderimage.o.cmd (tools):    $(wildcard include/config/of/from/resource.h) \
+.main.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.main.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.memsize.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.memsize.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.mipi_dsi.o.cmd (drivers\video\transmitter):    $(wildcard include/config/resource/partition.h) \
+.mipi_dsi.o.cmd (drivers\video\transmitter):    $(wildcard include/config/of/from/resource.h) \
+.mmc.o.cmd (board\rockchip\common\sdhci):    $(wildcard include/config/resource/partition.h) \
+.mmc.o.cmd (board\rockchip\common\sdhci):    $(wildcard include/config/of/from/resource.h) \
+.mmc.o.cmd (board\rockchip\common\sdhci):  include/resource.h \
+.net_utils.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.net_utils.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.panel_simple.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.panel_simple.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.panel_simple.o.cmd (drivers\video):  include/resource.h \
+.parameter.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/resource/partition.h) \
+.parameter.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/of/from/resource.h) \
+.parameter.o.cmd (board\rockchip\common\rkloader):  include/resource.h \
+.pmic_act8846.o.cmd (drivers\power\pmic):    $(wildcard include/config/resource/partition.h) \
+.pmic_act8846.o.cmd (drivers\power\pmic):    $(wildcard include/config/of/from/resource.h) \
+.pmic_ricoh619.o.cmd (drivers\power\pmic):    $(wildcard include/config/resource/partition.h) \
+.pmic_ricoh619.o.cmd (drivers\power\pmic):    $(wildcard include/config/of/from/resource.h) \
+.pmic_rk808.o.cmd (drivers\power\pmic):    $(wildcard include/config/resource/partition.h) \
+.pmic_rk808.o.cmd (drivers\power\pmic):    $(wildcard include/config/of/from/resource.h) \
+.pmic_rk816.o.cmd (drivers\power\pmic):    $(wildcard include/config/resource/partition.h) \
+.pmic_rk816.o.cmd (drivers\power\pmic):    $(wildcard include/config/of/from/resource.h) \
+.pmic_rk818.o.cmd (drivers\power\pmic):    $(wildcard include/config/resource/partition.h) \
+.pmic_rk818.o.cmd (drivers\power\pmic):    $(wildcard include/config/of/from/resource.h) \
+.power_core.o.cmd (drivers\power):    $(wildcard include/config/resource/partition.h) \
+.power_core.o.cmd (drivers\power):    $(wildcard include/config/of/from/resource.h) \
+.power_fdt.o.cmd (drivers\power):    $(wildcard include/config/resource/partition.h) \
+.power_fdt.o.cmd (drivers\power):    $(wildcard include/config/of/from/resource.h) \
+.power_i2c.o.cmd (drivers\power):    $(wildcard include/config/resource/partition.h) \
+.power_i2c.o.cmd (drivers\power):    $(wildcard include/config/of/from/resource.h) \
+.power_rockchip.o.cmd (drivers\power):    $(wildcard include/config/resource/partition.h) \
+.power_rockchip.o.cmd (drivers\power):    $(wildcard include/config/of/from/resource.h) \
+.pwm_bl.o.cmd (drivers\video\backlight):    $(wildcard include/config/resource/partition.h) \
+.pwm_bl.o.cmd (drivers\video\backlight):    $(wildcard include/config/of/from/resource.h) \
+.pwm_remotectl.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/resource/partition.h) \
+.pwm_remotectl.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/of/from/resource.h) \
+.qsort.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.qsort.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.rand.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.rand.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.rc4_enc.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/resource/partition.h) \
+.rc4_enc.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/of/from/resource.h) \
+.rc4_enc.o.cmd (board\rockchip\common\platform):  include/resource.h \
+.relocate_64.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.relocate_64.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.reset.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/resource/partition.h) \
+.reset.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/of/from/resource.h) \
+.reset.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.reset.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.resource.o.cmd (common):cmd_common/resource.o := /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc -Wp,-MD,common/.resource.o.d  -nostdinc -isystem /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/../lib/gcc/aarch64-linux-android/4.9.x-google/include -Iinclude  -I/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include -include /home/topeet/Desktop/Android7.1/u-boot/include/linux/kconfig.h -D__KERNEL__ -D__UBOOT__ -DCONFIG_SYS_TEXT_BASE=0x00200000 -Wall -Wstrict-prototypes -Wno-format-security -fno-builtin -ffreestanding -Os -fno-stack-protector -g -fstack-usage -Wno-format-nonliteral -Werror=date-time -D__ARM__ -march=armv8-a -fno-pic -mgeneral-regs-only -mstrict-align -ffunction-sections -fdata-sections -fno-common -ffixed-r9 -fno-common -ffixed-x18 -pipe    -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(resource)"  -D"KBUILD_MODNAME=KBUILD_STR(resource)" -c -o common/resource.o common/resource.c
+.resource.o.cmd (common):source_common/resource.o := common/resource.c
+.resource.o.cmd (common):deps_common/resource.o := \
+.resource.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.resource.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.resource.o.cmd (common):  include/resource.h \
+.resource.o.cmd (common):common/resource.o: $(deps_common/resource.o)
+.resource.o.cmd (common):$(deps_common/resource.o):
+.rk322x_lcdc.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rk322x_lcdc.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rk32_dp.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rk32_dp.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rk32_dp_reg.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rk32_dp_reg.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rk32_hdmi.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rk32_hdmi.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rk32_mipi_dsi.o.cmd (drivers\video\transmitter):    $(wildcard include/config/resource/partition.h) \
+.rk32_mipi_dsi.o.cmd (drivers\video\transmitter):    $(wildcard include/config/of/from/resource.h) \
+.rk33xx.o.cmd (board\rockchip\rk33xx):    $(wildcard include/config/resource/partition.h) \
+.rk33xx.o.cmd (board\rockchip\rk33xx):    $(wildcard include/config/of/from/resource.h) \
+.rk33xx.o.cmd (board\rockchip\rk33xx):  include/resource.h \
+.rkimage.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/resource/partition.h) \
+.rkimage.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/of/from/resource.h) \
+.rkimage.o.cmd (board\rockchip\common\rkloader):  include/resource.h \
+.rkloader.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/resource/partition.h) \
+.rkloader.o.cmd (board\rockchip\common\rkloader):    $(wildcard include/config/of/from/resource.h) \
+.rkloader.o.cmd (board\rockchip\common\rkloader):  include/resource.h \
+.rk_edid.o.cmd (drivers\video\dw_hdmi):    $(wildcard include/config/resource/partition.h) \
+.rk_edid.o.cmd (drivers\video\dw_hdmi):    $(wildcard include/config/of/from/resource.h) \
+.rk_edid.o.cmd (drivers\video\dw_hdmi):  include/resource.h \
+.rk_gpio.o.cmd (drivers\gpio):    $(wildcard include/config/resource/partition.h) \
+.rk_gpio.o.cmd (drivers\gpio):    $(wildcard include/config/of/from/resource.h) \
+.rk_hdmi.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rk_hdmi.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rk_hdmi.o.cmd (drivers\video):  include/resource.h \
+.rk_i2c.o.cmd (drivers\i2c):    $(wildcard include/config/resource/partition.h) \
+.rk_i2c.o.cmd (drivers\i2c):    $(wildcard include/config/of/from/resource.h) \
+.rk_pwm.o.cmd (drivers\pwm):    $(wildcard include/config/resource/partition.h) \
+.rk_pwm.o.cmd (drivers\pwm):    $(wildcard include/config/of/from/resource.h) \
+.rockchip-dw-mipi-dsi.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip-dw-mipi-dsi.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip-dw-mipi-dsi.o.cmd (drivers\video):  include/resource.h \
+.rockchip-inno-mipi-dphy.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip-inno-mipi-dphy.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip-inno-mipi-dphy.o.cmd (drivers\video):  include/resource.h \
+.rockchip_analogix_dp.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_analogix_dp.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_analogix_dp.o.cmd (drivers\video):  include/resource.h \
+.rockchip_analogix_dp_reg.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_analogix_dp_reg.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_analogix_dp_reg.o.cmd (drivers\video):  include/resource.h \
+.rockchip_connector.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_connector.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_connector.o.cmd (drivers\video):  include/resource.h \
+.rockchip_crtc.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_crtc.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_crtc.o.cmd (drivers\video):  include/resource.h \
+.rockchip_display.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_display.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_display.o.cmd (drivers\video):  include/resource.h \
+.rockchip_dsi_panel.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_dsi_panel.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_dsi_panel.o.cmd (drivers\video):  include/resource.h \
+.rockchip_dw_hdmi.o.cmd (drivers\video\dw_hdmi):    $(wildcard include/config/resource/partition.h) \
+.rockchip_dw_hdmi.o.cmd (drivers\video\dw_hdmi):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_dw_hdmi.o.cmd (drivers\video\dw_hdmi):  include/resource.h \
+.rockchip_dw_hdmi_reg.o.cmd (drivers\video\dw_hdmi):    $(wildcard include/config/resource/partition.h) \
+.rockchip_dw_hdmi_reg.o.cmd (drivers\video\dw_hdmi):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_fb.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_fb.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_lvds.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_lvds.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_lvds.o.cmd (drivers\video):  include/resource.h \
+.rockchip_mipi_dsi.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_mipi_dsi.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_mipi_dsi.o.cmd (drivers\video):  include/resource.h \
+.rockchip_panel.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_panel.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_panel.o.cmd (drivers\video):  include/resource.h \
+.rockchip_phy.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_phy.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_phy.o.cmd (drivers\video):  include/resource.h \
+.rockchip_pwm_regulator.o.cmd (drivers\power):    $(wildcard include/config/resource/partition.h) \
+.rockchip_pwm_regulator.o.cmd (drivers\power):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_vop.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_vop.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_vop.o.cmd (drivers\video):  include/resource.h \
+.rockchip_vop_reg.o.cmd (drivers\video):    $(wildcard include/config/resource/partition.h) \
+.rockchip_vop_reg.o.cmd (drivers\video):    $(wildcard include/config/of/from/resource.h) \
+.rockchip_vop_reg.o.cmd (drivers\video):  include/resource.h \
+.sdhci.o.cmd (board\rockchip\common\sdhci):    $(wildcard include/config/resource/partition.h) \
+.sdhci.o.cmd (board\rockchip\common\sdhci):    $(wildcard include/config/of/from/resource.h) \
+.sdhci.o.cmd (board\rockchip\common\sdhci):  include/resource.h \
+.sdhciBoot.o.cmd (board\rockchip\common\mediaboot):    $(wildcard include/config/resource/partition.h) \
+.sdhciBoot.o.cmd (board\rockchip\common\mediaboot):    $(wildcard include/config/of/from/resource.h) \
+.sdhciBoot.o.cmd (board\rockchip\common\mediaboot):  include/resource.h \
+.sdmmcBoot.o.cmd (board\rockchip\common\mediaboot):    $(wildcard include/config/resource/partition.h) \
+.sdmmcBoot.o.cmd (board\rockchip\common\mediaboot):    $(wildcard include/config/of/from/resource.h) \
+.sdmmcBoot.o.cmd (board\rockchip\common\mediaboot):  include/resource.h \
+.SecureBoot.o.cmd (board\rockchip\common\secureboot):    $(wildcard include/config/resource/partition.h) \
+.SecureBoot.o.cmd (board\rockchip\common\secureboot):    $(wildcard include/config/of/from/resource.h) \
+.SecureBoot.o.cmd (board\rockchip\common\secureboot):  include/resource.h \
+.SecureVerify.o.cmd (board\rockchip\common\secureboot):    $(wildcard include/config/resource/partition.h) \
+.SecureVerify.o.cmd (board\rockchip\common\secureboot):    $(wildcard include/config/of/from/resource.h) \
+.SecureVerify.o.cmd (board\rockchip\common\secureboot):  include/resource.h \
+.serial.o.cmd (drivers\serial):    $(wildcard include/config/resource/partition.h) \
+.serial.o.cmd (drivers\serial):    $(wildcard include/config/of/from/resource.h) \
+.serial_rk.o.cmd (drivers\serial):    $(wildcard include/config/resource/partition.h) \
+.serial_rk.o.cmd (drivers\serial):    $(wildcard include/config/of/from/resource.h) \
+.sha.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/resource/partition.h) \
+.sha.o.cmd (board\rockchip\common\platform):    $(wildcard include/config/of/from/resource.h) \
+.sha.o.cmd (board\rockchip\common\platform):  include/resource.h \
+.sha256.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.sha256.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.spi.o.cmd (drivers\spi):    $(wildcard include/config/resource/partition.h) \
+.spi.o.cmd (drivers\spi):    $(wildcard include/config/of/from/resource.h) \
+.splash.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.splash.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.stack.o.cmd (arch\arm\lib):    $(wildcard include/config/resource/partition.h) \
+.stack.o.cmd (arch\arm\lib):    $(wildcard include/config/of/from/resource.h) \
+.start.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/resource/partition.h) \
+.start.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/of/from/resource.h) \
+.stdio.o.cmd (common):    $(wildcard include/config/resource/partition.h) \
+.stdio.o.cmd (common):    $(wildcard include/config/of/from/resource.h) \
+.storage.o.cmd (board\rockchip\common\storage):    $(wildcard include/config/resource/partition.h) \
+.storage.o.cmd (board\rockchip\common\storage):    $(wildcard include/config/of/from/resource.h) \
+.storage.o.cmd (board\rockchip\common\storage):  include/resource.h \
+.string.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.string.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.strmhz.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.strmhz.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.stubs.o.cmd (examples\standalone):    $(wildcard include/config/resource/partition.h) \
+.stubs.o.cmd (examples\standalone):    $(wildcard include/config/of/from/resource.h) \
+.time.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.time.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+.timer.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/resource/partition.h) \
+.timer.o.cmd (arch\arm\cpu\armv8\rk33xx):    $(wildcard include/config/of/from/resource.h) \
+.tlb.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/resource/partition.h) \
+.tlb.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/of/from/resource.h) \
+.tqm8xx_pcmcia.o.cmd (drivers\pcmcia):    $(wildcard include/config/resource/partition.h) \
+.tqm8xx_pcmcia.o.cmd (drivers\pcmcia):    $(wildcard include/config/of/from/resource.h) \
+.transition.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/resource/partition.h) \
+.transition.o.cmd (arch\arm\cpu\armv8):    $(wildcard include/config/of/from/resource.h) \
+.trust_merger.o.cmd (tools):    $(wildcard include/config/resource/partition.h) \
+.trust_merger.o.cmd (tools):    $(wildcard include/config/of/from/resource.h) \
+.u-boot.lds.cmd:    $(wildcard include/config/resource/partition.h) \
+.u-boot.lds.cmd:    $(wildcard include/config/of/from/resource.h) \
+.usbdev_bc.o.cmd (drivers\power\charge):    $(wildcard include/config/resource/partition.h) \
+.usbdev_bc.o.cmd (drivers\power\charge):    $(wildcard include/config/of/from/resource.h) \
+.vsprintf.o.cmd (lib):    $(wildcard include/config/resource/partition.h) \
+.vsprintf.o.cmd (lib):    $(wildcard include/config/of/from/resource.h) \
+4xx_pcie.c (arch\powerpc\cpu\ppc4xx):		/* setup mem resource */
+Am35x.c (drivers\usb\musb-new):	ret = platform_device_add_resources(musb, pdev->resource,
+APC405.h (include\configs):					/* resource configuration       */
+AR405.h (include\configs):					/* resource configuration	*/
+ASH405.h (include\configs):					/* resource configuration	*/
+At91_gpbr.h (arch\arm\include\asm\arch-at91): * The Atmel AT91SAM9 series has a small resource of 4 nonvolatile
+At91_gpbr.h (arch\arm\include\asm\arch-at91): * Please consider carefully before using this resource for tasks
+Au1x00.h (arch\mips\include\asm):/* All of our structures, like pci resource, have 32 bit members.
+Au1x00.h (arch\mips\include\asm): * Drivers are expected to do an ioremap on the PCI MEM resource, but it's
+Bubinga.h (include\configs):					/* resource configuration       */
+Building.txt (source insight\笔记):  CC      common/resource.o
+CATcenter.h (include\configs):					/* resource configuration	*/
+Charge_anim_desc.txt (tools\resource_tool\resources):#prefix(prefix of pics' path in resource.img)
+Cli_hush.c (common): *      propagate syntax errors, die on resource errors?
+Cli_hush.c (common):	{"ulimit","Controls resource limits", builtin_not_written},
+Cmd_bootrk.c (common):	/* loader fdt from resource if content.load_addr == NULL */
+Cmd_bootrk.c (common):	debug("loader kernel logo from resource.\n");
+Cmd_bootrk.c (common):	/* kernel logo default load from resource */
+Cmd_bootrk.c (common):	 * offset is optional, depend on resource image has kernel_logo.bmp.
+Cmd_charge.c (common):#include <resource.h>
+Cmd_fastboot.c (common):#include <resource.h>
+Composite.c (drivers\usb\gadget): * initial "ready to respond" state, or when a required resource
+Controlcenterd-id.c (board\gdsys\p1022):	/* resource types */
+Core.h (drivers\usb\dwc3):	struct resource		xhci_resources[DWC3_XHCI_RESOURCES_NUM];
+CPCI2DP.h (include\configs):					/* resource configuration       */
+CPCI405.h (include\configs):					/* resource configuration       */
+CPCI4052.h (include\configs):					/* resource configuration       */
+CPCI405AB.h (include\configs):					/* resource configuration	*/
+CPCI405DT.h (include\configs):					/* resource configuration       */
+CPCIISER4.h (include\configs):					/* resource configuration	*/
+Csb272.h (include\configs):					/* resource configuration       */
+Csb472.h (include\configs):					/* resource configuration       */
+Dlmalloc.c (common):      mmap threshold of 192K led to near-minimal long term resource
+E1000.c (drivers\net):		/* firmware currently using resource (fwmask) */
+E1000.c (drivers\net):		/* or other software thread currently using resource (swmask) */
+E1000.c (drivers\net):		DEBUGOUT("Driver can't access resource, SW_FW_SYNC timeout.\n");
+Errno.h (include\asm-generic):#define	EBUSY		16	/* Device or resource busy */
+Ether_fcc.c (arch\powerpc\cpu\mpc8260):     * can do this.  Later, we will add resource management for
+Ether_fcc.c (arch\powerpc\cpu\mpc8260):		 * can do this.  Later, we will add resource management for
+Ether_fcc.c (arch\powerpc\cpu\mpc85xx):     * can do this.  Later, we will add resource management for
+Fdtdec.h (include): * Information about a resource. start is the first address of the resource
+Fdtdec.h (include): * and end is the last address (inclusive). The length of the resource will
+Fdtdec.h (include): * Compute the size of a resource.
+Fdtdec.h (include): * @param res	the resource to operate on
+Fdtdec.h (include): * @return the size of the resource
+Fdtdec.h (include): * Obtain an indexed resource from a device property.
+Fdtdec.h (include): * @param index		index of the resource to retrieve
+Fdtdec.h (include): * @param res		returns the resource
+Fdtdec.h (include): * Obtain a named resource from a device property.
+Fdtdec.h (include): * Look up the index of the name in a list of strings and return the resource
+Fdtdec.h (include): * @param res		returns the resource
+G2000.h (include\configs):					/* resource configuration       */
+HH405.h (include\configs):					/* resource configuration       */
+HUB405.h (include\configs):					/* resource configuration	*/
+Ioport.h (include\linux):struct resource {
+Ioport.h (include\linux):	struct resource *parent, *sibling, *child;
+Ioport.h (include\linux):	struct resource *res;
+Ioport.h (include\linux):#define IORESOURCE_EXCLUSIVE	0x08000000	/* Userland may not map this resource */
+Ioport.h (include\linux):#define IORESOURCE_BUSY		0x80000000	/* Driver has marked this resource busy */
+Ioport.h (include\linux):#define IORESOURCE_ROM_COPY		(1<<2)	/* ROM is alloc'd copy, resource field overlaid */
+Ioport.h (include\linux):#define IORESOURCE_ROM_BIOS_COPY	(1<<3)	/* ROM is BIOS copy, resource field overlaid */
+Ioport.h (include\linux):#define IORESOURCE_PCI_FIXED		(1<<4)	/* Do not move resource */
+Ioport.h (include\linux):extern struct resource ioport_resource;
+Ioport.h (include\linux):extern struct resource iomem_resource;
+Ioport.h (include\linux):extern int request_resource(struct resource *root, struct resource *new);
+Ioport.h (include\linux):extern int release_resource(struct resource *new);
+Ioport.h (include\linux):extern void reserve_region_with_split(struct resource *root,
+Ioport.h (include\linux):extern int insert_resource(struct resource *parent, struct resource *new);
+Ioport.h (include\linux):extern void insert_resource_expand_to_fit(struct resource *root, struct resource *new);
+Ioport.h (include\linux):extern int allocate_resource(struct resource *root, struct resource *new,
+Ioport.h (include\linux):			     void (*alignf)(void *, struct resource *,
+Ioport.h (include\linux):int adjust_resource(struct resource *res, resource_size_t start,
+Ioport.h (include\linux):resource_size_t resource_alignment(struct resource *res);
+Ioport.h (include\linux):static inline resource_size_t resource_size(const struct resource *res)
+Ioport.h (include\linux):static inline unsigned long resource_type(const struct resource *res)
+Ioport.h (include\linux):extern struct resource * __request_region(struct resource *,
+Ioport.h (include\linux):extern int __check_region(struct resource *, resource_size_t, resource_size_t);
+Ioport.h (include\linux):extern void __release_region(struct resource *, resource_size_t,
+Ioport.h (include\linux):extern struct resource * __devm_request_region(struct device *dev,
+Ioport.h (include\linux):				struct resource *parent, resource_size_t start,
+Ioport.h (include\linux):extern void __devm_release_region(struct device *dev, struct resource *parent,
+JSE.h (include\configs):					/* resource configuration	*/
+Lcd.c (common):#include <resource.h>
+Log.txt (source insight\笔记):Load FDT from resource image.
+Logdebug.txt (source insight\笔记):partition(resource): offset=0x00008000, size=0x00008000
+Logdebug.txt (source insight\笔记):Load FDT from resource image.
+Malloc.h (include):      mmap threshold of 192K led to near-minimal long term resource
+MIP405.h (include\configs):					/* resource configuration	*/
+Musb_core.c (drivers\usb\musb-new):	struct resource	*iomem;
+Musb_dsps.c (drivers\usb\musb-new):	struct resource *res;
+Musb_dsps.c (drivers\usb\musb-new):	struct resource	resources[2];
+Musb_dsps.c (drivers\usb\musb-new):	/* get memory resource */
+Musb_dsps.c (drivers\usb\musb-new):		dev_err(dev, "%s get mem resource failed\n", res_name);
+Musb_dsps.c (drivers\usb\musb-new):	/* get irq resource */
+Musb_dsps.c (drivers\usb\musb-new):		dev_err(dev, "%s get irq resource failed\n", res_name);
+Musb_dsps.c (drivers\usb\musb-new):	struct resource *iomem;
+Musb_dsps.c (drivers\usb\musb-new):	/* get memory resource */
+Mv_eth.c (board\esd\cpci750):			printf ("ETH Queue: using last available resource. \n");
+Mv_eth.c (board\esd\cpci750): *		a SW resource error:
+Mv_eth.c (board\esd\cpci750): *		This index points to the current available resource for use. For
+Mv_eth.c (board\esd\cpci750): *		when in middle of Such packet we have a Tx resource error the
+Mv_eth.c (board\esd\cpci750): *		It is the user responsibility to return this resource back
+Mv_eth.c (board\esd\cpci750): *		Return Rx resource is done using the eth_rx_return_buff API.
+Mv_eth.c (board\esd\cpci750): *		The user must return a Tx resource after ensuring the buffer
+Mv_eth.c (board\esd\cpci750): *		return_info	Tx/Rx user resource return information.
+Mv_eth.c (board\esd\cpci750): *      If the routine get into Tx resource error it assigns 'curr' index as
+Mv_eth.c (board\esd\cpci750): *      ETH_QUEUE_FULL in case of Tx resource error.
+Mv_eth.c (board\esd\cpci750): *	ETH_QUEUE_LAST_RESOURCE if the routine uses the last Tx resource.
+Mv_eth.c (board\esd\cpci750):	/* Do not process Tx ring in case of Tx ring resource error */
+Mv_eth.c (board\esd\cpci750):		/* Finish Tx packet. Update first desc in case of Tx resource error */
+Mv_eth.c (board\esd\cpci750): *      In case the Tx queue was in "resource error" condition, where there are
+Mv_eth.c (board\esd\cpci750): *      no available Tx resources, the function resets the resource error flag.
+Mv_eth.c (board\esd\cpci750):	/* Any Tx return cancels the Tx resource error status */
+Mv_eth.c (board\esd\cpci750): *      If the routine exhausts	Rx ring resources then the resource error flag
+Mv_eth.c (board\esd\cpci750):	/* Do not process Rx ring in case of Rx ring resource error */
+Mv_eth.c (board\esd\cpci750):	/* Rx descriptors resource exhausted. Set the Rx ring resource error flag */
+Mv_eth.c (board\esd\cpci750): *      In case the Rx ring was in "resource error" condition, where there are
+Mv_eth.c (board\esd\cpci750): *      no available Rx resources, the function resets the resource error flag.
+Mv_eth.c (board\esd\cpci750): *	New available Rx resource in Rx descriptor ring.
+Mv_eth.c (board\esd\cpci750):	volatile ETH_RX_DESC *p_used_rx_desc;	/* Where to return Rx resource */
+Mv_eth.c (board\esd\cpci750):	/* Any Rx return cancels the Rx resource error status */
+Mv_eth.c (board\marvell\db64360):			printf ("ETH Queue: using last available resource. \n");
+Mv_eth.c (board\marvell\db64360): *		a SW resource error:
+Mv_eth.c (board\marvell\db64360): *		This index points to the current available resource for use. For
+Mv_eth.c (board\marvell\db64360): *		when in middle of Such packet we have a Tx resource error the
+Mv_eth.c (board\marvell\db64360): *		It is the user responsibility to return this resource back
+Mv_eth.c (board\marvell\db64360): *		Return Rx resource is done using the eth_rx_return_buff API.
+Mv_eth.c (board\marvell\db64360): *		The user must return a Tx resource after ensuring the buffer
+Mv_eth.c (board\marvell\db64360): *		return_info	Tx/Rx user resource return information.
+Mv_eth.c (board\marvell\db64360): *      If the routine get into Tx resource error it assigns 'curr' index as
+Mv_eth.c (board\marvell\db64360): *      ETH_QUEUE_FULL in case of Tx resource error.
+Mv_eth.c (board\marvell\db64360): *	ETH_QUEUE_LAST_RESOURCE if the routine uses the last Tx resource.
+Mv_eth.c (board\marvell\db64360):	/* Do not process Tx ring in case of Tx ring resource error */
+Mv_eth.c (board\marvell\db64360):		/* Finish Tx packet. Update first desc in case of Tx resource error */
+Mv_eth.c (board\marvell\db64360): *      In case the Tx queue was in "resource error" condition, where there are
+Mv_eth.c (board\marvell\db64360): *      no available Tx resources, the function resets the resource error flag.
+Mv_eth.c (board\marvell\db64360):	/* Any Tx return cancels the Tx resource error status */
+Mv_eth.c (board\marvell\db64360): *      If the routine exhausts	Rx ring resources then the resource error flag
+Mv_eth.c (board\marvell\db64360):	/* Do not process Rx ring in case of Rx ring resource error */
+Mv_eth.c (board\marvell\db64360):	/* Rx descriptors resource exhausted. Set the Rx ring resource error flag */
+Mv_eth.c (board\marvell\db64360): *      In case the Rx ring was in "resource error" condition, where there are
+Mv_eth.c (board\marvell\db64360): *      no available Rx resources, the function resets the resource error flag.
+Mv_eth.c (board\marvell\db64360): *	New available Rx resource in Rx descriptor ring.
+Mv_eth.c (board\marvell\db64360):	volatile ETH_RX_DESC *p_used_rx_desc;	/* Where to return Rx resource */
+Mv_eth.c (board\marvell\db64360):	/* Any Rx return cancels the Rx resource error status */
+Mv_eth.c (board\marvell\db64460):			printf ("ETH Queue: using last available resource. \n");
+Mv_eth.c (board\marvell\db64460): *		a SW resource error:
+Mv_eth.c (board\marvell\db64460): *		This index points to the current available resource for use. For
+Mv_eth.c (board\marvell\db64460): *		when in middle of Such packet we have a Tx resource error the
+Mv_eth.c (board\marvell\db64460): *		It is the user responsibility to return this resource back
+Mv_eth.c (board\marvell\db64460): *		Return Rx resource is done using the eth_rx_return_buff API.
+Mv_eth.c (board\marvell\db64460): *		The user must return a Tx resource after ensuring the buffer
+Mv_eth.c (board\marvell\db64460): *		return_info	Tx/Rx user resource return information.
+Mv_eth.c (board\marvell\db64460): *      If the routine get into Tx resource error it assigns 'curr' index as
+Mv_eth.c (board\marvell\db64460): *      ETH_QUEUE_FULL in case of Tx resource error.
+Mv_eth.c (board\marvell\db64460): *	ETH_QUEUE_LAST_RESOURCE if the routine uses the last Tx resource.
+Mv_eth.c (board\marvell\db64460):	/* Do not process Tx ring in case of Tx ring resource error */
+Mv_eth.c (board\marvell\db64460):		/* Finish Tx packet. Update first desc in case of Tx resource error */
+Mv_eth.c (board\marvell\db64460): *      In case the Tx queue was in "resource error" condition, where there are
+Mv_eth.c (board\marvell\db64460): *      no available Tx resources, the function resets the resource error flag.
+Mv_eth.c (board\marvell\db64460):	/* Any Tx return cancels the Tx resource error status */
+Mv_eth.c (board\marvell\db64460): *      If the routine exhausts	Rx ring resources then the resource error flag
+Mv_eth.c (board\marvell\db64460):	/* Do not process Rx ring in case of Rx ring resource error */
+Mv_eth.c (board\marvell\db64460):	/* Rx descriptors resource exhausted. Set the Rx ring resource error flag */
+Mv_eth.c (board\marvell\db64460): *      In case the Rx ring was in "resource error" condition, where there are
+Mv_eth.c (board\marvell\db64460): *      no available Rx resources, the function resets the resource error flag.
+Mv_eth.c (board\marvell\db64460): *	New available Rx resource in Rx descriptor ring.
+Mv_eth.c (board\marvell\db64460):	volatile ETH_RX_DESC *p_used_rx_desc;	/* Where to return Rx resource */
+Mv_eth.c (board\marvell\db64460):	/* Any Rx return cancels the Rx resource error status */
+Mv_eth.c (board\prodrive\p3mx):			printf ("ETH Queue: using last available resource. \n");
+Mv_eth.c (board\prodrive\p3mx): *		a SW resource error:
+Mv_eth.c (board\prodrive\p3mx): *		This index points to the current available resource for use. For
+Mv_eth.c (board\prodrive\p3mx): *		when in middle of Such packet we have a Tx resource error the
+Mv_eth.c (board\prodrive\p3mx): *		It is the user responsibility to return this resource back
+Mv_eth.c (board\prodrive\p3mx): *		Return Rx resource is done using the eth_rx_return_buff API.
+Mv_eth.c (board\prodrive\p3mx): *		The user must return a Tx resource after ensuring the buffer
+Mv_eth.c (board\prodrive\p3mx): *		return_info	Tx/Rx user resource return information.
+Mv_eth.c (board\prodrive\p3mx): *	If the routine get into Tx resource error it assigns 'curr' index as
+Mv_eth.c (board\prodrive\p3mx): *	ETH_QUEUE_FULL in case of Tx resource error.
+Mv_eth.c (board\prodrive\p3mx): *	ETH_QUEUE_LAST_RESOURCE if the routine uses the last Tx resource.
+Mv_eth.c (board\prodrive\p3mx):	/* Do not process Tx ring in case of Tx ring resource error */
+Mv_eth.c (board\prodrive\p3mx):		/* Finish Tx packet. Update first desc in case of Tx resource error */
+Mv_eth.c (board\prodrive\p3mx): *	In case the Tx queue was in "resource error" condition, where there are
+Mv_eth.c (board\prodrive\p3mx): *	no available Tx resources, the function resets the resource error flag.
+Mv_eth.c (board\prodrive\p3mx):	/* Any Tx return cancels the Tx resource error status */
+Mv_eth.c (board\prodrive\p3mx): *	If the routine exhausts Rx ring resources then the resource error flag
+Mv_eth.c (board\prodrive\p3mx):	/* Do not process Rx ring in case of Rx ring resource error */
+Mv_eth.c (board\prodrive\p3mx):	/* Rx descriptors resource exhausted. Set the Rx ring resource error flag */
+Mv_eth.c (board\prodrive\p3mx): *	In case the Rx ring was in "resource error" condition, where there are
+Mv_eth.c (board\prodrive\p3mx): *	no available Rx resources, the function resets the resource error flag.
+Mv_eth.c (board\prodrive\p3mx): *	New available Rx resource in Rx descriptor ring.
+Mv_eth.c (board\prodrive\p3mx):	volatile ETH_RX_DESC *p_used_rx_desc;	/* Where to return Rx resource */
+Mv_eth.c (board\prodrive\p3mx):	/* Any Rx return cancels the Rx resource error status */
+Mv_eth.h (board\esd\cpci750):    ETH_QUEUE_FULL,		/* Ring resource error.			    */
+Mv_eth.h (board\esd\cpci750):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\esd\cpci750):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\esd\cpci750):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\esd\cpci750):    bool rx_resource_err[MAX_RX_QUEUE_NUM]; /* Rx ring resource error flag */
+Mv_eth.h (board\esd\cpci750):    bool tx_resource_err[MAX_TX_QUEUE_NUM]; /* Tx ring resource error flag */
+Mv_eth.h (board\esd\cpci750):    /* Next available Rx resource */
+Mv_eth.h (board\esd\cpci750):    /* Returning Rx resource */
+Mv_eth.h (board\esd\cpci750):    /* Next available Tx resource */
+Mv_eth.h (board\esd\cpci750):    /* Returning Tx resource */
+Mv_eth.h (board\marvell\db64360):    ETH_QUEUE_FULL,		/* Ring resource error.			    */
+Mv_eth.h (board\marvell\db64360):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\marvell\db64360):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\marvell\db64360):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\marvell\db64360):    bool rx_resource_err[MAX_RX_QUEUE_NUM]; /* Rx ring resource error flag */
+Mv_eth.h (board\marvell\db64360):    bool tx_resource_err[MAX_TX_QUEUE_NUM]; /* Tx ring resource error flag */
+Mv_eth.h (board\marvell\db64360):    /* Next available Rx resource */
+Mv_eth.h (board\marvell\db64360):    /* Returning Rx resource */
+Mv_eth.h (board\marvell\db64360):    /* Next available Tx resource */
+Mv_eth.h (board\marvell\db64360):    /* Returning Tx resource */
+Mv_eth.h (board\marvell\db64460):    ETH_QUEUE_FULL,		/* Ring resource error.			    */
+Mv_eth.h (board\marvell\db64460):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\marvell\db64460):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\marvell\db64460):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\marvell\db64460):    bool rx_resource_err[MAX_RX_QUEUE_NUM]; /* Rx ring resource error flag */
+Mv_eth.h (board\marvell\db64460):    bool tx_resource_err[MAX_TX_QUEUE_NUM]; /* Tx ring resource error flag */
+Mv_eth.h (board\marvell\db64460):    /* Next available Rx resource */
+Mv_eth.h (board\marvell\db64460):    /* Returning Rx resource */
+Mv_eth.h (board\marvell\db64460):    /* Next available Tx resource */
+Mv_eth.h (board\marvell\db64460):    /* Returning Tx resource */
+Mv_eth.h (board\prodrive\p3mx):    ETH_QUEUE_FULL,		/* Ring resource error.			    */
+Mv_eth.h (board\prodrive\p3mx):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\prodrive\p3mx):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\prodrive\p3mx):    unsigned int    return_info ;    /* User resource return information */
+Mv_eth.h (board\prodrive\p3mx):    bool rx_resource_err[MAX_RX_QUEUE_NUM]; /* Rx ring resource error flag */
+Mv_eth.h (board\prodrive\p3mx):    bool tx_resource_err[MAX_TX_QUEUE_NUM]; /* Tx ring resource error flag */
+Mv_eth.h (board\prodrive\p3mx):    /* Next available Rx resource */
+Mv_eth.h (board\prodrive\p3mx):    /* Returning Rx resource */
+Mv_eth.h (board\prodrive\p3mx):    /* Next available Tx resource */
+Mv_eth.h (board\prodrive\p3mx):    /* Returning Tx resource */
+OCRTC.h (include\configs):					/* resource configuration	*/
+Omap2430.c (drivers\usb\musb-new):	ret = platform_device_add_resources(musb, pdev->resource,
+Panel_simple.c (drivers\video):#include <resource.h>
+PCI405.h (include\configs):					/* resource configuration	*/
+Pcie_cdns.c (board\rockchip\common\nvme):		DBG_ERR("please assign your PCIe resource\n");
+Pcie_cdns.c (board\rockchip\common\nvme):		DBG_ERR("please assign your PCIe resource\n");
+Pci_auto.c (drivers\pci):		DEBUGF("No resource");
+Pci_auto.c (drivers\pci):		DEBUGF("No room in resource");
+PIP405.h (include\configs):					/* resource configuration	*/
+PLU405.h (include\configs):					/* resource configuration       */
+PMC405.h (include\configs):					/* resource configuration	*/
+PPChameleonEVB.h (include\configs):					/* resource configuration	*/
+Resource.c (common):#include <resource.h>
+Resource.c (common):		/* if no resource partition, load logo from boot partition second data area */
+Resource.c (common):		FBTERR("Not a resource image!\n");
+Resource.c (common):		FBTERR("Not a resource image!\n");
+Resource.c (common):			debug("%s:show logo from resource or boot partition\n", __func__);
+Resource.h (include):	uint32_t content_offset;//blocks, offset of resource content.
+Resource.h (include):	uint32_t content_size;//bytes, size of resource content.
+Resource.h (include):	uint32_t content_offset;//blocks, offset of resource content.
+Resource.h (include):	uint32_t content_size;//bytes, size of resource content.
+Resource_tool.c (tools\resource_tool):    printf("Tools for Rockchip's resource image.\n");
+Resource_tool.c (tools\resource_tool):        LOGE("Not a resource image(%s)!", image_path);
+Resource_tool.h (tools\resource_tool):#define DEFAULT_IMAGE_PATH          "resource.img"
+Resource_tool.h (tools\resource_tool):    uint32_t content_offset;//blocks, offset of resource content.
+Resource_tool.h (tools\resource_tool):    uint32_t content_size;//bytes, size of resource content.
+Rk322x_lcdc.h (drivers\video):/*NOTE: hardware in order to save resource , srch first to get interlace line
+Rk3368_lcdc.h (drivers\video):/*NOTE: hardware in order to save resource , srch first to get interlace line
+Rkimage.c (board\rockchip\common\rkloader):		debug("Failed to prepare fdt from resource!\n");
+Rkimage.c (board\rockchip\common\rkloader):		printf("Load FDT from resource image.\n");
+Rkimage.h (board\rockchip\common\rkloader):#include <resource.h>
+Rkimage.h (board\rockchip\common\rkloader):#define RESOURCE_NAME   "resource"
+Rk_default_config.h (include\configs):/* fdt and rk resource support */
+Rk_default_config.h (include\configs):#define CONFIG_RESOURCE_PARTITION	/* rk resource parttion */
+Rk_default_config.h (include\configs):#define CONFIG_OF_FROM_RESOURCE		/* fdt from resource */
+Rk_default_config.h (source insight\笔记):/* fdt and rk resource support */
+Rk_default_config.h (source insight\笔记):#define CONFIG_RESOURCE_PARTITION	/* rk resource parttion */
+Rk_default_config.h (source insight\笔记):#define CONFIG_OF_FROM_RESOURCE		/* fdt from resource */
+Rk_vop_full.h (drivers\video):/*NOTE: hardware in order to save resource , srch first to get interlace line
+Rockchip-dw-mipi-dsi.c (drivers\video):#include <resource.h>
+Rockchip-inno-mipi-dphy.c (drivers\video):#include <resource.h>
+Rockchip_analogix_dp.c (drivers\video):#include <resource.h>
+Rockchip_analogix_dp_reg.c (drivers\video):#include <resource.h>
+Rockchip_connector.c (drivers\video):#include <resource.h>
+Rockchip_connector.h (drivers\video):	 * init connector, prepare resource to ensure
+Rockchip_crtc.c (drivers\video):#include <resource.h>
+Rockchip_display.c (drivers\video):#include <resource.h>
+Rockchip_dsi_panel.c (drivers\video):#include <resource.h>
+Rockchip_dw_hdmi.c (drivers\video\dw_hdmi):#include <resource.h>
+Rockchip_lvds.c (drivers\video):#include <resource.h>
+Rockchip_mipi_dsi.c (drivers\video):#include <resource.h>
+Rockchip_panel.c (drivers\video):#include <resource.h>
+Rockchip_phy.c (drivers\video):#include <resource.h>
+Rockchip_vop.c (drivers\video):#include <resource.h>
+Rockchip_vop_reg.c (drivers\video):#include <resource.h>
+Sbc405.h (include\configs):					/* resource configuration	*/
+Sc3.h (include\configs):					/* resource configuration	*/
+Sh_pfc.h (include):	struct resource *resource;
+Sunxi_mmc.c (drivers\mmc):	debug("init mmc %d resource\n", sdc_no);
+Super.c (fs\ubifs): * resource was actually allocated before freeing it.
+Taihu.h (include\configs):					/* resource configuration      */
+Tests.c (tools\resource_tool):        LOGE("Not a resource image(%s)!", image_path);
+Tests.h (tools\resource_tool):    uint32_t content_offset;//blocks, offset of resource content.
+Tests.h (tools\resource_tool):    uint32_t content_size;//bytes, size of resource content.
+Traps.c (arch\blackfin\cpu):		case 0x2e: return "illegal use of supervisor resource";
+Twl4030.h (include):#define RES_GRP_ALL		0x7	/* All resource groups */
+Uli526x.c (drivers\net):	/* No Tx resource check, it never happen nromally */
+Uli526x.c (drivers\net):		printf("No Tx resource %ld\n", db->tx_packet_cnt);
+Uli526x.c (drivers\net): *	Free TX resource after TX complete
+VOH405.h (include\configs):					/* resource configuration       */
+Vsprintf.h (include): * %pR output the address range in a struct resource
+W7OLMC.h (include\configs):/* resource configuration	*/
+W7OLMG.h (include\configs):/* resource configuration	*/
+Walnut.h (include\configs):					/* resource configuration	*/
+WUH405.h (include\configs):					/* resource configuration	*/
+---- MIPI_DSI_MODE_VIDEO Matches (1 in 1 files) ----
+Rockchip_mipi_dsi.h (drivers\video):#define MIPI_DSI_MODE_VIDEO		BIT(0)
+---- MIPI_DSI_FMT_RGB888 Matches (3 in 2 files) ----
+Rockchip-dw-mipi-dsi.c (drivers\video):	case MIPI_DSI_FMT_RGB888:
+Rockchip_mipi_dsi.h (drivers\video):	MIPI_DSI_FMT_RGB888,
+Rockchip_mipi_dsi.h (drivers\video):	case MIPI_DSI_FMT_RGB888:
+---- MEDIA_BUS_FMT_RGB666_1X18 Matches (2 in 2 files) ----
+Media-bus-format.h (include\linux):#define MEDIA_BUS_FMT_RGB666_1X18		0x1009
+Rockchip_vop.c (drivers\video):	case MEDIA_BUS_FMT_RGB666_1X18:
