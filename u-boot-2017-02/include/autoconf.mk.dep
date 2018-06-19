@@ -1,0 +1,172 @@
+include/config/auto.conf: \
+ /home/topeet/Desktop/Android7.1/u-boot/include/common.h \
+ /home/topeet/Desktop/Android7.1/u-boot/include/linux/kconfig.h \
+ include/generated/autoconf.h include/config.h include/config_defaults.h \
+ include/configs/rk33plat.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/arch/io.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/arch/io-rk3399.h \
+ include/linux/sizes.h include/configs/rk_default_config.h \
+ include/config_cmd_default.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/config.h \
+ include/config_fallbacks.h include/config_uncmd_spl.h \
+ include/asm-offsets.h include/linux/bitops.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/types.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/bitops.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/proc-armv/system.h \
+ include/linux/types.h include/linux/posix_types.h include/linux/stddef.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/posix_types.h \
+ /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stdbool.h \
+ include/linux/string.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/string.h \
+ include/linux/linux_string.h include/linux/stringify.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/ptrace.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/proc-armv/ptrace.h \
+ /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stdarg.h \
+ include/part.h include/ide.h include/common.h include/flash.h \
+ include/image.h include/compiler.h \
+ /home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stddef.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/byteorder.h \
+ include/linux/byteorder/little_endian.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h \
+ include/linux/byteorder/swab.h include/linux/byteorder/generic.h \
+ include/lmb.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/u-boot.h \
+ include/asm-generic/u-boot.h include/command.h include/linker_lists.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/global_data.h \
+ include/asm-generic/global_data.h include/linux/list.h \
+ include/linux/poison.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/mach-types.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/setup.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/u-boot-arm.h \
+ include/uuid.h include/vsprintf.h include/u-boot/crc.h include/net.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/cache.h \
+ /home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/system.h \
+ include/bootstage.h include/environment.h
+
+/home/topeet/Desktop/Android7.1/u-boot/include/linux/kconfig.h:
+
+include/generated/autoconf.h:
+
+include/config.h:
+
+include/config_defaults.h:
+
+include/configs/rk33plat.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/arch/io.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/arch/io-rk3399.h:
+
+include/linux/sizes.h:
+
+include/configs/rk_default_config.h:
+
+include/config_cmd_default.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/config.h:
+
+include/config_fallbacks.h:
+
+include/config_uncmd_spl.h:
+
+include/asm-offsets.h:
+
+include/linux/bitops.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/types.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/bitops.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/proc-armv/system.h:
+
+include/linux/types.h:
+
+include/linux/posix_types.h:
+
+include/linux/stddef.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/posix_types.h:
+
+/home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stdbool.h:
+
+include/linux/string.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/string.h:
+
+include/linux/linux_string.h:
+
+include/linux/stringify.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/ptrace.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/proc-armv/ptrace.h:
+
+/home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stdarg.h:
+
+include/part.h:
+
+include/ide.h:
+
+include/common.h:
+
+include/flash.h:
+
+include/image.h:
+
+include/compiler.h:
+
+/home/topeet/Desktop/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/lib/gcc/aarch64-linux-android/4.9.x-google/include/stddef.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/byteorder.h:
+
+include/linux/byteorder/little_endian.h:
+
+include/linux/compiler.h:
+
+include/linux/compiler-gcc.h:
+
+include/linux/compiler-gcc4.h:
+
+include/linux/byteorder/swab.h:
+
+include/linux/byteorder/generic.h:
+
+include/lmb.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/u-boot.h:
+
+include/asm-generic/u-boot.h:
+
+include/command.h:
+
+include/linker_lists.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/global_data.h:
+
+include/asm-generic/global_data.h:
+
+include/linux/list.h:
+
+include/linux/poison.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/mach-types.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/setup.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/u-boot-arm.h:
+
+include/uuid.h:
+
+include/vsprintf.h:
+
+include/u-boot/crc.h:
+
+include/net.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/cache.h:
+
+/home/topeet/Desktop/Android7.1/u-boot/arch/arm/include/asm/system.h:
+
+include/bootstage.h:
+
+include/environment.h:
